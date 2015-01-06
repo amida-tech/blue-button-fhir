@@ -34,12 +34,12 @@ var input0 = {
 
 describe('condition resource unit', function () {
     it('case 0', function (done) {
-        condition.toModel(input0.body, {}, function (err, problem) {
+        condition.toModel(input0, {}, function (err, result) {
             if (err) {
                 done(err);
             } else {
-                var result = validator.validate(problem, 'problem');
-                if (result) {
+                var r = validator.validate(result.value, result.type);
+                if (r) {
                     done();
                 } else {
                     var e = JSON.stringify(validator.getLastError(), undefined, 2);

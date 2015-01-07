@@ -24,7 +24,9 @@
     },
     "dependencies": {
         "async": "^0.9.0",
-        "blue-button-util": "^1.4.0-beta.1"
+        "blue-button-util": "^1.4.0-beta.1",
+        "bunyan": "^1.2.3",
+        "request": "^2.51.0"
     },
     "devDependencies": {
         "blue-button-model": "^1.3.0",

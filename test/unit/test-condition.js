@@ -34,7 +34,7 @@ var input0 = {
 
 describe('condition resource unit', function () {
     it('case 0', function (done) {
-        condition.toModel(input0, {}, function (err, result) {
+        condition.toModel({}, input0, function (err, result) {
             if (err) {
                 done(err);
             } else {

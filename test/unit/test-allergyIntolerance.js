@@ -13,13 +13,16 @@ var validator = bbm.validator;
 describe('allergyIntolerance resource unit', function () {
     it('case 0', function (done) {
         var app = fhir.optionsToApp('test-allergyIntolerance', {});
-        app.store.addResources(cases[0].resources);
+        var c = cases[0];
+        app.store.addResources(c.resources);
 
-        allergyIntolerance.toModel(app, cases[0].input, function (err, result) {
+        allergyIntolerance.toModel(app, c.input, function (err, result) {
             if (err) {
                 done(err);
             } else {
-                var r = true; //validator.validate(result.value, result.type);
+                expect(result.value).to.deep.equal(c.result);
+
+                var r = validator.validate(result.value, result.type);
                 if (r) {
                     done();
                 } else {

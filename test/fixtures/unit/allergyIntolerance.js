@@ -64,39 +64,17 @@ cases[0].resources = [{
 cases[0].input = cases[0].resources[1];
 
 cases[0].result = {
-    "identifiers": na,
     "date_time": {
-        "point": {
-            "date": "2006-05-01T00:00:00.000Z",
-            "precision": "day"
-        },
         "low": {
             "date": "2006-05-01T00:00:00.000Z",
             "precision": "day"
-        },
-        "high": {
-            "date": "2012-08-06T00:00:00.000Z",
-            "precision": "day"
         }
     },
-    "problemStatus": "completed",
     "observation": {
-        "identifiers": na,
         "allergen": {
             "name": "Codeine",
             "code": "2670",
             "code_system_name": "RXNORM"
-        },
-        "intolerance": {
-            "name": "Propensity to adverse reaction to drug",
-            "code": "419511003",
-            "code_system_name": "SNOMED CT"
-        },
-        "date_time": {
-            "low": {
-                "date": "2006-05-01T00:00:00.000Z",
-                "precision": "day"
-            }
         },
         "status": {
             "name": "Active",
@@ -104,23 +82,15 @@ cases[0].result = {
             "code_system_name": "SNOMED CT"
         },
         "reactions": [{
-            "identifiers": na,
-            "date_time": {
-                "low": {
-                    "date": "2006-05-01T00:00:00.000Z",
-                    "precision": "day"
-                }
-            },
             "reaction": {
                 "name": "Shortness of Breath",
                 "code": "267036007",
                 "code_system_name": "SNOMED CT"
             },
-            "free_text_reaction": "Shortness of Breath",
             "severity": {
                 "code": {
-                    "name": "Mild to moderate",
-                    "code": "371923003",
+                    "name": "Mild",
+                    "code": "255604002",
                     "code_system_name": "SNOMED CT"
                 }
             }

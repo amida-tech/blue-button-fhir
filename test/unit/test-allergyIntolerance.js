@@ -4,6 +4,7 @@ var chai = require('chai');
 var bbm = require('blue-button-model');
 
 var resourceStore = require('../../lib/resourceStore');
+var fhir = require('../../lib/fhir');
 var allergyIntolerance = require('../../lib/resource/allergyIntolerance');
 var cases = require('../fixtures/unit/allergyIntolerance');
 
@@ -17,9 +18,9 @@ describe('allergyIntolerance resource unit', function () {
             var store = resourceStore.create();
             store.addResources(c.resources);
 
-            var result = allergyIntolerance.toModel(store, c.input.body);
-            expect(result.value).to.deep.equal(c.result);
-            var r = validator.validate(result.value, result.type);
+            var result = fhir.resourceToModel(store, allergyIntolerance, c.input.body);
+            expect(result).to.deep.equal(c.result);
+            var r = validator.validate(result, 'allergy');
             if (!r) {
                 console.log(JSON.stringify(validator.getLastError(), undefined, 2));
             }

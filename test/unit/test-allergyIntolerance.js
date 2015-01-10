@@ -11,25 +11,31 @@ var expect = chai.expect;
 var validator = bbm.validator;
 
 describe('allergyIntolerance resource unit', function () {
-    it('case 0', function (done) {
-        var app = fhir.optionsToApp('test-allergyIntolerance', {});
-        var c = cases[0];
-        app.store.addResources(c.resources);
+    var caseFn = function (n) {
+        return function (done) {
+            var c = cases[n];
+            var app = fhir.optionsToApp('test-allergyIntolerance', {});
+            app.store.addResources(c.resources);
 
-        allergyIntolerance.toModel(app, c.input.body, function (err, result) {
-            if (err) {
-                done(err);
-            } else {
-                expect(result.value).to.deep.equal(c.result);
-
-                var r = validator.validate(result.value, result.type);
-                if (r) {
-                    done();
+            allergyIntolerance.toModel(app, c.input.body, function (err, result) {
+                if (err) {
+                    done(err);
                 } else {
-                    var e = JSON.stringify(validator.getLastError(), undefined, 2);
-                    done(new Error(e));
+                    expect(result.value).to.deep.equal(c.result);
+
+                    var r = validator.validate(result.value, result.type);
+                    if (r) {
+                        done();
+                    } else {
+                        var e = JSON.stringify(validator.getLastError(), undefined, 2);
+                        done(new Error(e));
+                    }
                 }
-            }
-        });
-    });
+            });
+        };
+    };
+
+    for (var i = 0; i < cases.length; ++i) {
+        it('case ' + i, caseFn(i));
+    }
 });

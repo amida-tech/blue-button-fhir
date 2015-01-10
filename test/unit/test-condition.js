@@ -11,11 +11,10 @@ var expect = chai.expect;
 var validator = bbm.validator;
 
 describe('condition resource unit', function () {
-    var app = fhir.optionsToApp('test-condition', {});
-
     var caseFn = function (n) {
         return function (done) {
             var c = cases[n];
+            var app = fhir.optionsToApp('test-condition', {});
             condition.toModel(app, c.input.body, function (err, result) {
                 if (err) {
                     done(err);

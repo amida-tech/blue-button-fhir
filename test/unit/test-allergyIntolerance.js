@@ -16,7 +16,7 @@ describe('allergyIntolerance resource unit', function () {
         var c = cases[0];
         app.store.addResources(c.resources);
 
-        allergyIntolerance.toModel(app, c.input, function (err, result) {
+        allergyIntolerance.toModel(app, c.input.body, function (err, result) {
             if (err) {
                 done(err);
             } else {

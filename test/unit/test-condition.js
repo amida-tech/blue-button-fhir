@@ -16,7 +16,7 @@ describe('condition resource unit', function () {
     var caseFn = function (n) {
         return function (done) {
             var c = cases[n];
-            condition.toModel(app, c.input, function (err, result) {
+            condition.toModel(app, c.input.body, function (err, result) {
                 if (err) {
                     done(err);
                 } else {

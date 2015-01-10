@@ -3,7 +3,7 @@
 var chai = require('chai');
 var bbm = require('blue-button-model');
 
-var fhir = require('../../lib/fhir');
+var resourceStore = require('../../lib/resourceStore');
 var allergyIntolerance = require('../../lib/resource/allergyIntolerance');
 var cases = require('../fixtures/unit/allergyIntolerance');
 
@@ -12,26 +12,18 @@ var validator = bbm.validator;
 
 describe('allergyIntolerance resource unit', function () {
     var caseFn = function (n) {
-        return function (done) {
+        return function () {
             var c = cases[n];
-            var app = fhir.optionsToApp('test-allergyIntolerance', {});
-            app.store.addResources(c.resources);
+            var store = resourceStore.create();
+            store.addResources(c.resources);
 
-            allergyIntolerance.toModel(app, c.input.body, function (err, result) {
-                if (err) {
-                    done(err);
-                } else {
-                    expect(result.value).to.deep.equal(c.result);
-
-                    var r = validator.validate(result.value, result.type);
-                    if (r) {
-                        done();
-                    } else {
-                        var e = JSON.stringify(validator.getLastError(), undefined, 2);
-                        done(new Error(e));
-                    }
-                }
-            });
+            var result = allergyIntolerance.toModel(store, c.input.body);
+            expect(result.value).to.deep.equal(c.result);
+            var r = validator.validate(result.value, result.type);
+            if (!r) {
+                console.log(JSON.stringify(validator.getLastError(), undefined, 2));
+            }
+            expect(r).to.be.true;
         };
     };
 

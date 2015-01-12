@@ -2,6 +2,8 @@
 
 var cases = module.exports = [];
 
+var na = null;
+
 cases[0] = {};
 
 cases[0].resources = [];
@@ -12,10 +14,7 @@ cases[0].input = {
     "body": {
         "resourceType": "Condition",
         "status": "confirmed",
-        "subject": {
-            "reference": "Patient/add70d80-2f87-11e4-a02b-699a62c7658f",
-            "display": "PAC-PATRU TESTPATRU X"
-        },
+        "subject": na,
         "onsetDate": "2012-08-05",
         "dateAsserted": "2012-08-05",
         "abatementBoolean": true,
@@ -25,7 +24,7 @@ cases[0].input = {
                 "system": "http://snomed.info/sct",
                 "display": "Pneumonia"
             }],
-            "text": "Pneumonia"
+            "text": na
         }
     }
 };
@@ -59,10 +58,7 @@ cases[1].input = {
     "body": {
         "resourceType": "Condition",
         "status": "confirmed",
-        "subject": {
-            "reference": "Patient/add70d80-2f87-11e4-a02b-699a62c7658f",
-            "display": "PAC-PATRU TESTPATRU X"
-        },
+        "subject": na,
         "onsetDate": "2007-01-03",
         "dateAsserted": "2007-01-03",
         "code": {
@@ -71,7 +67,7 @@ cases[1].input = {
                 "system": "http://snomed.info/sct",
                 "display": "Asthma"
             }],
-            "text": "Asthma"
+            "text": na
         }
     }
 };
@@ -102,10 +98,7 @@ cases[2].input = {
     "body": {
         "resourceType": "Condition",
         "status": "confirmed",
-        "subject": {
-            "reference": "Patient/add70d80-2f87-11e4-a02b-699a62c7658f",
-            "display": "PAC-PATRU TESTPATRU X"
-        },
+        "subject": na,
         "onsetDate": "2007-01-03",
         "dateAsserted": "2007-01-03",
         "abatementDate": "2012-09-05",
@@ -115,7 +108,7 @@ cases[2].input = {
                 "system": "http://snomed.info/sct",
                 "display": "Asthma"
             }],
-            "text": "Asthma"
+            "text": na
         }
     }
 };

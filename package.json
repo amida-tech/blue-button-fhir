@@ -24,7 +24,8 @@
     },
     "dependencies": {
         "blue-button-util": "^1.4.0-beta.1",
-        "bunyan": "^1.2.3"
+        "bunyan": "^1.2.3",
+        "lodash": "^2.4.1"
     },
     "devDependencies": {
         "blue-button-model": "^1.3.0",

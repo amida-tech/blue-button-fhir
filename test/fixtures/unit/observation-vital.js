@@ -4,6 +4,8 @@ var cases = module.exports = [];
 
 cases[0] = {};
 
+var na = null;
+
 cases[0].resources = [];
 
 cases[0].input = {
@@ -28,10 +30,7 @@ cases[0].input = {
         "issued": "2014-05-15",
         "status": "final",
         "reliability": "ok",
-        "subject": {
-            "reference": "Patient/add70d80-2f87-11e4-a02b-699a62c7658f",
-            "display": "PAC-PATRU TESTPATRU X"
-        },
+        "subject": na,
         "extension": [{
             "url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
             "valueCoding": {
@@ -96,10 +95,7 @@ cases[1].input = {
         "issued": "2014-05-15",
         "status": "final",
         "reliability": "ok",
-        "subject": {
-            "reference": "Patient/add70d80-2f87-11e4-a02b-699a62c7658f",
-            "display": "PAC-PATRU TESTPATRU X"
-        },
+        "subject": na,
         "extension": [{
             "url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
             "valueCoding": {
@@ -164,10 +160,7 @@ cases[2].input = {
         "issued": "2014-05-15",
         "status": "final",
         "reliability": "ok",
-        "subject": {
-            "reference": "Patient/add70d80-2f87-11e4-a02b-699a62c7658f",
-            "display": "PAC-PATRU TESTPATRU X"
-        },
+        "subject": na,
         "extension": [{
             "url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
             "valueCoding": {
@@ -232,10 +225,7 @@ cases[3].input = {
         "issued": "2014-05-15",
         "status": "final",
         "reliability": "ok",
-        "subject": {
-            "reference": "Patient/add70d80-2f87-11e4-a02b-699a62c7658f",
-            "display": "PAC-PATRU TESTPATRU X"
-        },
+        "subject": na,
         "extension": [{
             "url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
             "valueCoding": {
@@ -300,10 +290,7 @@ cases[4].input = {
         "issued": "2014-06-16",
         "status": "final",
         "reliability": "ok",
-        "subject": {
-            "reference": "Patient/add70d80-2f87-11e4-a02b-699a62c7658f",
-            "display": "PAC-PATRU TESTPATRU X"
-        },
+        "subject": na,
         "extension": [{
             "url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
             "valueCoding": {
@@ -368,10 +355,7 @@ cases[5].input = {
         "issued": "2014-06-16",
         "status": "final",
         "reliability": "ok",
-        "subject": {
-            "reference": "Patient/add70d80-2f87-11e4-a02b-699a62c7658f",
-            "display": "PAC-PATRU TESTPATRU X"
-        },
+        "subject": na,
         "extension": [{
             "url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
             "valueCoding": {
@@ -436,10 +420,7 @@ cases[6].input = {
         "issued": "2014-05-15",
         "status": "final",
         "reliability": "ok",
-        "subject": {
-            "reference": "Patient/add70d80-2f87-11e4-a02b-699a62c7658f",
-            "display": "PAC-PATRU TESTPATRU X"
-        },
+        "subject": na,
         "extension": [{
             "url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
             "valueCoding": {

@@ -137,3 +137,185 @@ cases[0].result = {
         }
     }
 };
+
+cases[1] = {};
+
+cases[1].resources = [{
+    "type": "MedicationPrescription",
+    "id": "0",
+    "body": {
+        "resourceType": "MedicationPrescription",
+        "status": "active",
+        "patient": na,
+        "dateWritten": "2014-10-03T03:59:00.000Z",
+        "dosageInstruction": [{
+            "timingDateTime": "2014-10-03T03:59:00.000Z"
+        }],
+        "contained": [{
+            "resourceType": "Medication",
+            "id": "med",
+            "name": "0-Albuterol 0.09 MG/ACTUAT inhalant solution",
+            "code": {
+                "coding": [{
+                    "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                    "code": "573621",
+                    "display": "0-Albuterol 0.09 MG/ACTUAT inhalant solution"
+                }],
+                "text": "0-Albuterol 0.09 MG/ACTUAT inhalant solution"
+            }
+        }],
+        "medication": {
+            "reference": "#med",
+            "display": "0-Albuterol 0.09 MG/ACTUAT inhalant solution"
+        }
+    }
+}];
+
+cases[1].input = cases[1].resources[0];
+
+cases[1].result = {
+    "date_time": {
+        "point": {
+            "date": "2014-10-03T03:59:00.000Z",
+            "precision": "second"
+        }
+    },
+    "status": "Prescribed",
+    "product": {
+        "product": {
+            "name": "0-Albuterol 0.09 MG/ACTUAT inhalant solution",
+            "code": "573621",
+            "code_system_name": "RXNORM"
+        }
+    }
+};
+
+cases[2] = {};
+
+cases[2].resources = [{
+    "type": "MedicationPrescription",
+    "id": "7",
+    "body": {
+        "resourceType": "MedicationPrescription",
+        "status": "completed",
+        "patient": na,
+        "dateWritten": "2012-08-06",
+        "dosageInstruction": [{
+            "timingSchedule": {
+                "event": [{
+                    "start": "2012-08-06"
+                }],
+                "repeat": {
+                    "when": "HS",
+                    "end": "2012-08-30",
+                    "duration": 1,
+                    "units": "s"
+                }
+            }
+        }],
+        "contained": [{
+            "resourceType": "Medication",
+            "id": "med",
+            "name": "7-Albuterol 0.09 MG/ACTUAT inhalant solution",
+            "code": {
+                "coding": [{
+                    "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                    "code": "573621",
+                    "display": "7-Albuterol 0.09 MG/ACTUAT inhalant solution"
+                }],
+                "text": "7-Albuterol 0.09 MG/ACTUAT inhalant solution"
+            }
+        }],
+        "medication": {
+            "reference": "#med",
+            "display": "7-Albuterol 0.09 MG/ACTUAT inhalant solution"
+        }
+    }
+}];
+
+cases[2].input = cases[2].resources[0];
+
+cases[2].result = {
+    "date_time": {
+        "low": {
+            "date": "2012-08-06T00:00:00.000Z",
+            "precision": "day"
+        },
+        "high": {
+            "date": "2012-08-30T00:00:00.000Z",
+            "precision": "day"
+        }
+    },
+    "status": "Prescribed",
+    "product": {
+        "product": {
+            "name": "7-Albuterol 0.09 MG/ACTUAT inhalant solution",
+            "code": "573621",
+            "code_system_name": "RXNORM"
+        }
+    },
+    "administration": {
+        "interval": {
+            "event": "at bedtime"
+        }
+    }
+};
+
+cases[3] = {};
+
+cases[3].resources = [{
+    "type": "MedicationPrescription",
+    "id": "1",
+    "body": {
+        "resourceType": "MedicationPrescription",
+        "status": "active",
+        "patient": na,
+        "dateWritten": "2012-08-06",
+        "dosageInstruction": [{
+            "timingPeriod": {
+                "start": "2012-08-06",
+                "end": "2012-08-30"
+            }
+        }],
+        "contained": [{
+            "resourceType": "Medication",
+            "id": "med",
+            "name": "1-Albuterol 0.09 MG/ACTUAT inhalant solution",
+            "code": {
+                "coding": [{
+                    "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                    "code": "573621",
+                    "display": "1-Albuterol 0.09 MG/ACTUAT inhalant solution"
+                }],
+                "text": "1-Albuterol 0.09 MG/ACTUAT inhalant solution"
+            }
+        }],
+        "medication": {
+            "reference": "#med",
+            "display": "1-Albuterol 0.09 MG/ACTUAT inhalant solution"
+        }
+    }
+}];
+
+cases[3].input = cases[3].resources[0];
+
+cases[3].result = {
+    "date_time": {
+        "low": {
+            "date": "2012-08-06T00:00:00.000Z",
+            "precision": "day"
+        },
+        "high": {
+            "date": "2012-08-30T00:00:00.000Z",
+            "precision": "day"
+        }
+    },
+    "status": "Prescribed",
+    "product": {
+        "product": {
+            "name": "1-Albuterol 0.09 MG/ACTUAT inhalant solution",
+            "code": "573621",
+            "code_system_name": "RXNORM"
+        }
+    }
+};

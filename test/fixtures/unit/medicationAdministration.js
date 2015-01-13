@@ -151,6 +151,7 @@ cases[0].result = {
             "precision": "day"
         }
     },
+    "sig": "Albuterol 0.09 MG/ACTUAT inhalant solution",
     "status": "Completed",
     "product": {
         "product": {

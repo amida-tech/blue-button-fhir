@@ -180,6 +180,7 @@ cases[1].result = {
             "code": "DUMMY_CODE",
             "code_system_name": "RXNORM"
         },
+        "allergenName": "Codeine",
         "status": {
             "name": "Active",
             "code": "55561003",

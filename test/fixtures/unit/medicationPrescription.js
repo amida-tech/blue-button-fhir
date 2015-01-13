@@ -93,12 +93,17 @@ cases[0].input = cases[0].resources[0];
 
 cases[0].result = {
     "date_time": {
-        "point": {
+        "low": {
             "date": "2012-08-06T00:00:00.000Z",
+            "precision": "day"
+        },
+        "high": {
+            "date": "2012-08-13T00:00:00.000Z",
             "precision": "day"
         }
     },
     "status": "Prescribed",
+    "sig": "Albuterol 0.09 MG/ACTUAT inhalant solution",
     "product": {
         "product": {
             "name": "Albuterol 0.09 MG/ACTUAT Inhalant Solution [Ventolin HFA]",

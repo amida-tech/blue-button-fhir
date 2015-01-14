@@ -12,13 +12,14 @@ This library translates an array of FHIR resources to [blue button model](https:
 
 Currently the following resources are supported
 * Allergy Intolerance
+ * Adverse Reaction and Substance resources that are externally referenced from any Allergy Intolerance resource is assumed to be in the input array of resources.
 * Condition
 * Medication Administration
+ * Medication and Medication Prescription resources that are externally referenced from any Medication Administration resource is assumed to be in the input array resources. 
 * Medication Prescription
-* Observation (vitals - LOINC code 8716-3)
-* Observation (results - LOINC code 11502-2)
-
-It is assumed that any resources that are referenced from these resources also exist in the input array.  This library is synchronous and do not call to any FHIR server.
+ * Medication resources that are externally referenced from any Medication Prescription resource is assumed to be in the input array resources. 
+* Observation
+ * Observation resources are assumed to have an extension->valueCoding element that defines the LOINC description of the type of the resource. Vitals (code - 8716-3) and Results (code - 11502-2) are supported.
 
 ## Usage
 

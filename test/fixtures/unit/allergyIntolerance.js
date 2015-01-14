@@ -8,7 +8,7 @@ cases[0] = {};
 
 cases[0].resources = [{
     "type": "AdverseReaction",
-    "id": "0",
+    "id": "a-0-0",
     "body": {
         "resourceType": "AdverseReaction",
         "subject": na,
@@ -27,7 +27,7 @@ cases[0].resources = [{
     }
 }, {
     "type": "AllergyIntolerance",
-    "id": "1",
+    "id": "a-0-1",
     "body": {
         "resourceType": "AllergyIntolerance",
         "criticality": "medium",
@@ -36,17 +36,17 @@ cases[0].resources = [{
         "status": "confirmed",
         "subject": na,
         "substance": {
-            "reference": "Substance/2",
+            "reference": "Substance/a-0-2",
             "display": na
         },
         "reaction": [{
-            "reference": "AdverseReaction/0",
+            "reference": "AdverseReaction/a-0-0",
             "display": na
         }]
     }
 }, {
     "type": "Substance",
-    "id": "2",
+    "id": "a-0-2",
     "body": {
         "resourceType": "Substance",
         "text": na,
@@ -109,13 +109,10 @@ cases[1] = {};
 
 cases[1].resources = [{
     "type": "AdverseReaction",
-    "id": "0",
+    "id": "a-1-0",
     "body": {
         "resourceType": "AdverseReaction",
-        "subject": {
-            "reference": "Patient/add70d80-2f87-11e4-a02b-699a62c7658f",
-            "display": "PAC-PATRU TESTPATRU X"
-        },
+        "subject": na,
         "symptom": [{
             "severity": "minor",
             "code": {
@@ -131,17 +128,14 @@ cases[1].resources = [{
     }
 }, {
     "type": "AllergyIntolerance",
-    "id": "1",
+    "id": "a-1-1",
     "body": {
         "resourceType": "AllergyIntolerance",
         "criticality": "medium",
         "sensitivityType": "allergy",
         "recordedDate": "2006-05-01",
         "status": "confirmed",
-        "subject": {
-            "reference": "Patient/add70d80-2f87-11e4-a02b-699a62c7658f",
-            "display": "PAC-PATRU TESTPATRU X"
-        },
+        "subject": na,
         "substance": {
             "reference": "#allergen",
             "display": "Codeine"
@@ -159,7 +153,7 @@ cases[1].resources = [{
             }
         }],
         "reaction": [{
-            "reference": "AdverseReaction/0",
+            "reference": "AdverseReaction/a-1-0",
             "display": "Shortness of Breath"
         }]
     }

@@ -6,11 +6,9 @@ cases[0] = {};
 
 var na = null;
 
-cases[0].resources = [];
-
-cases[0].input = {
+cases[0].resources = [{
     "type": "Observation",
-    "id": "0",
+    "id": "ov-0-0",
     "body": {
         "resourceType": "Observation",
         "name": {
@@ -48,7 +46,9 @@ cases[0].input = {
             "text": "Normal"
         }
     }
-};
+}];
+
+cases[0].input = cases[0].resources[0];
 
 cases[0].result = {
     "vital": {
@@ -71,11 +71,9 @@ cases[0].result = {
 
 cases[1] = {};
 
-cases[1].resources = [];
-
-cases[1].input = {
+cases[1].resources = [{
     "type": "Observation",
-    "id": "1",
+    "id": "ov-1-0",
     "body": {
         "resourceType": "Observation",
         "name": {
@@ -113,7 +111,9 @@ cases[1].input = {
             "text": "Normal"
         }
     }
-};
+}];
+
+cases[1].input = cases[1].resources[0];
 
 cases[1].result = {
     "vital": {
@@ -136,11 +136,9 @@ cases[1].result = {
 
 cases[2] = {};
 
-cases[2].resources = [];
-
-cases[2].input = {
+cases[2].resources = [{
     "type": "Observation",
-    "id": "2",
+    "id": "ov-2-0",
     "body": {
         "resourceType": "Observation",
         "name": {
@@ -178,7 +176,9 @@ cases[2].input = {
             "text": "Normal"
         }
     }
-};
+}];
+
+cases[2].input = cases[2].resources[0];
 
 cases[2].result = {
     "vital": {
@@ -201,11 +201,9 @@ cases[2].result = {
 
 cases[3] = {};
 
-cases[3].resources = [];
-
-cases[3].input = {
+cases[3].resources = [{
     "type": "Observation",
-    "id": "3",
+    "id": "ov-3-0",
     "body": {
         "resourceType": "Observation",
         "name": {
@@ -243,7 +241,9 @@ cases[3].input = {
             "text": "Normal"
         }
     }
-};
+}];
+
+cases[3].input = cases[3].resources[0];
 
 cases[3].result = {
     "vital": {
@@ -266,11 +266,9 @@ cases[3].result = {
 
 cases[4] = {};
 
-cases[4].resources = [];
-
-cases[4].input = {
+cases[4].resources = [{
     "type": "Observation",
-    "id": "4",
+    "id": "ov-4-0",
     "body": {
         "resourceType": "Observation",
         "name": {
@@ -308,7 +306,9 @@ cases[4].input = {
             "text": "Normal"
         }
     }
-};
+}];
+
+cases[4].input = cases[4].resources[0];
 
 cases[4].result = {
     "vital": {
@@ -331,11 +331,9 @@ cases[4].result = {
 
 cases[5] = {};
 
-cases[5].resources = [];
-
-cases[5].input = {
+cases[5].resources = [{
     "type": "Observation",
-    "id": "5",
+    "id": "ov-5-0",
     "body": {
         "resourceType": "Observation",
         "name": {
@@ -373,7 +371,9 @@ cases[5].input = {
             "text": "Normal"
         }
     }
-};
+}];
+
+cases[5].input = cases[5].resources[0];
 
 cases[5].result = {
     "vital": {
@@ -396,11 +396,9 @@ cases[5].result = {
 
 cases[6] = {};
 
-cases[6].resources = [];
-
-cases[6].input = {
+cases[6].resources = [{
     "type": "Observation",
-    "id": "6",
+    "id": "ov-6-0",
     "body": {
         "resourceType": "Observation",
         "name": {
@@ -438,7 +436,9 @@ cases[6].input = {
             "text": "Normal"
         }
     }
-};
+}];
+
+cases[6].input = cases[6].resources[0];
 
 cases[6].result = {
     "vital": {

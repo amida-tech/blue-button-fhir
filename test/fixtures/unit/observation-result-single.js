@@ -8,7 +8,7 @@ cases[0] = {};
 
 cases[0].resources = [{
     "type": "Observation",
-    "id": "0",
+    "id": "ors-0-0",
     "body": {
         "resourceType": "Observation",
         "name": {

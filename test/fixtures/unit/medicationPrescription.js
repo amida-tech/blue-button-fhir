@@ -8,7 +8,7 @@ cases[0] = {};
 
 cases[0].resources = [{
     "type": "MedicationPrescription",
-    "id": "0",
+    "id": "mp-0-0",
     "body": {
         "resourceType": "MedicationPrescription",
         "status": "completed",
@@ -54,12 +54,12 @@ cases[0].resources = [{
             "div": "Albuterol 0.09 MG/ACTUAT inhalant solution"
         },
         "medication": {
-            "reference": "Medication/1"
+            "reference": "Medication/mp-0-1"
         }
     }
 }, {
     "type": "Medication",
-    "id": "1",
+    "id": "mp-0-1",
     "body": {
         "resourceType": "Medication",
         "text": {
@@ -142,7 +142,7 @@ cases[1] = {};
 
 cases[1].resources = [{
     "type": "MedicationPrescription",
-    "id": "0",
+    "id": "mp-1-0",
     "body": {
         "resourceType": "MedicationPrescription",
         "status": "active",
@@ -194,7 +194,7 @@ cases[2] = {};
 
 cases[2].resources = [{
     "type": "MedicationPrescription",
-    "id": "7",
+    "id": "mp-2-0",
     "body": {
         "resourceType": "MedicationPrescription",
         "status": "completed",
@@ -265,7 +265,7 @@ cases[3] = {};
 
 cases[3].resources = [{
     "type": "MedicationPrescription",
-    "id": "1",
+    "id": "mp-3-0",
     "body": {
         "resourceType": "MedicationPrescription",
         "status": "active",

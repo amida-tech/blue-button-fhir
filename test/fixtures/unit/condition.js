@@ -6,11 +6,9 @@ var na = null;
 
 cases[0] = {};
 
-cases[0].resources = [];
-
-cases[0].input = {
+cases[0].resources = [{
     "type": "Condition",
-    "id": "0",
+    "id": "c-0-0",
     "body": {
         "resourceType": "Condition",
         "status": "confirmed",
@@ -27,7 +25,9 @@ cases[0].input = {
             "text": na
         }
     }
-};
+}];
+
+cases[0].input = cases[0].resources[0];
 
 cases[0].result = {
     "problem": {
@@ -50,11 +50,9 @@ cases[0].result = {
 
 cases[1] = {};
 
-cases[1].resources = [];
-
-cases[1].input = {
+cases[1].resources = [{
     "type": "Condition",
-    "id": "1",
+    "id": "c-1-0",
     "body": {
         "resourceType": "Condition",
         "status": "confirmed",
@@ -70,7 +68,9 @@ cases[1].input = {
             "text": na
         }
     }
-};
+}];
+
+cases[1].input = cases[1].resources[0];
 
 cases[1].result = {
     "problem": {
@@ -90,11 +90,9 @@ cases[1].result = {
 
 cases[2] = {};
 
-cases[2].resources = [];
-
-cases[2].input = {
+cases[2].resources = [{
     "type": "Condition",
-    "id": "2",
+    "id": "c-2-0",
     "body": {
         "resourceType": "Condition",
         "status": "confirmed",
@@ -111,7 +109,9 @@ cases[2].input = {
             "text": na
         }
     }
-};
+}];
+
+cases[2].input = cases[2].resources[0];
 
 cases[2].result = {
     "problem": {

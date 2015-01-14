@@ -1,3 +1,7 @@
 "use strict";
 
-module.exports = require('./lib/fhir');
+var fhir = require('./lib/fhir');
+
+exports.toModel = function (resources) {
+    return fhir.toModel(resources);
+};

@@ -4,7 +4,7 @@ var chai = require('chai');
 var bbu = require('blue-button-util');
 
 var resourceStore = require('../../lib/resourceStore');
-var fhir = require('../../lib/fhir');
+var fhir = require('../../index');
 
 var cases_a = require('../fixtures/unit/allergyIntolerance');
 var cases_c = require('../fixtures/unit/condition');

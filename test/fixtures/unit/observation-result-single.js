@@ -64,7 +64,7 @@ cases[0].result = {
             }
         },
         "status": "completed",
-        "textResult": "negative",
+        "text": "negative",
         "interpretations": [
             "Normal"
         ]

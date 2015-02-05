@@ -458,3 +458,60 @@ cases[6].result = {
     "value": 70,
     "unit": "mm[Hg]"
 };
+
+cases[7] = {};
+
+cases[7].resources = [{
+    "type": "Observation",
+    "id": "0",
+    "body": {
+        "resourceType": "Observation",
+        "name": {
+            "coding": [{
+                "system": "http://loinc.org",
+                "code": "8284-2",
+                "display": "Whole body Maximum circumference"
+            }],
+            "text": "Whole body Maximum circumference"
+        },
+        "valueQuantity": {
+            "value": 51.5,
+            "units": "[in_us]",
+            "code": "[in_us]",
+            "system": "http://unitsofmeasure.org"
+        },
+        "issued": "2014-05-15",
+        "status": "final",
+        "reliability": "ok",
+        "extension": [{
+            "url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
+            "valueCoding": {
+                "code": "8716-3",
+                "display": "Vital signs",
+                "system": "http://loinc.org"
+            }
+        }],
+        "subject": {
+            "reference": "Patient/add70d80-2f87-11e4-a02b-699a62c7658f",
+            "display": "PAC-PATRU TESTPATRU X"
+        }
+    }
+}];
+
+cases[7].input = cases[7].resources[0];
+
+cases[7].result = {
+    "vital": {
+        "name": "Whole body Maximum circumference",
+        "code": "8284-2",
+        "code_system_name": "LOINC"
+    },
+    "date_time": {
+        "point": {
+            "date": "2014-05-15T00:00:00.000Z",
+            "precision": "day"
+        }
+    },
+    "value": 51.5,
+    "unit": "[in_us]"
+};

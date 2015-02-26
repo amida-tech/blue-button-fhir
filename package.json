@@ -1,6 +1,6 @@
 {
     "name": "blue-button-fhir",
-    "version": "1.4.0-beta.11",
+    "version": "1.4.0-beta.12",
     "description": "Blue Button FHIR to Model Translator",
     "main": "./index.js",
     "directories": {

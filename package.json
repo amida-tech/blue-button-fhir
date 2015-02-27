@@ -1,6 +1,6 @@
 {
     "name": "blue-button-fhir",
-    "version": "1.4.0-beta.14",
+    "version": "1.4.0",
     "description": "Blue Button FHIR to Model Translator",
     "main": "./index.js",
     "directories": {
@@ -23,21 +23,21 @@
         "node": ">= 0.10.0"
     },
     "dependencies": {
-        "blue-button-meta": "^1.3.0",
-        "blue-button-util": "^1.4.0-beta.1",
-        "bunyan": "^1.2.3",
-        "lodash": "^2.4.1"
+        "blue-button-meta": "~1.3.0",
+        "blue-button-util": "~1.4.0",
+        "bunyan": "~1.2.3",
+        "lodash": "~2.4.1"
     },
     "devDependencies": {
-        "blue-button-model": "^1.3.0",
-        "chai": "^1.10.0",
-        "grunt": "^0.4.5",
-        "grunt-contrib-jshint": "^0.10.0",
-        "grunt-contrib-watch": "^0.6.1",
-        "grunt-jsbeautifier": "^0.2.7",
-        "grunt-mocha-test": "^0.12.4",
-        "grunt-shell": "^1.1.1",
-        "mocha": "^2.1.0"
+        "blue-button-model": "~1.4.0",
+        "chai": "~1.10.0",
+        "grunt": "~0.4.5",
+        "grunt-contrib-jshint": "~0.10.0",
+        "grunt-contrib-watch": "~0.6.1",
+        "grunt-jsbeautifier": "~0.2.7",
+        "grunt-mocha-test": "~0.12.4",
+        "grunt-shell": "~1.1.1",
+        "mocha": "~2.1.0"
     },
     "repository": {
         "type": "git",

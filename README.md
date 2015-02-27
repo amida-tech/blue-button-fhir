@@ -41,7 +41,7 @@ console.log(model.data.problems);
 ```
 ## Configuration
 
-The only configurable item in this project is logging which can be configured in `lib/logger.js`.  See [bunyan](https://github.com/trentm/node-bunyan) for onfiguration options.
+The only configurable item in this project is logging which can be configured in `lib/logger.js`.  See [bunyan](https://github.com/trentm/node-bunyan) for configuration options.
 
 ## Testing
 

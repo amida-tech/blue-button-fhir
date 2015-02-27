@@ -45,4 +45,4 @@ The only configurable item in this project is logging which can be configured in
 
 ## Testing
 
-[Mocha](http://mochajs.org/) and [Grunt](http://gruntjs.com/) are used for testing this prohect.  Simply run `grunt` in the project directory to run all the tests.
+[Mocha](http://mochajs.org/) and [Grunt](http://gruntjs.com/) are used for testing this project.  Simply run `grunt` in the project directory to run all the tests.

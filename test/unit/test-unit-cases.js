@@ -3,7 +3,6 @@
 var chai = require('chai');
 var bbm = require('blue-button-model');
 
-var resourceStore = require('../../lib/resourceStore');
 var fhir = require('../../lib/fhir');
 
 var aiCases = require('../fixtures/unit/allergyIntolerance');
@@ -21,8 +20,8 @@ var testDescription = function (cases) {
     var caseFn = function (n) {
         return function () {
             var c = cases[n];
-            var store = resourceStore.create(c.resources);
-            var result = fhir.resourceToModel(store, cases.template, c.input.content);
+            var resourceDictionary = fhir.toResourceDictionary(c.resources);
+            var result = fhir.resourceToModel(resourceDictionary, cases.template, c.input.content);
             expect(result).to.deep.equal(c.result);
             var r = validator.validate(result, cases.type);
             if (!r) {

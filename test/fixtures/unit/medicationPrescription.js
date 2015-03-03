@@ -2,7 +2,7 @@
 
 var cases = module.exports = [];
 
-cases.template = require('../../../lib/resource/MedicationPrescription');
+cases.template = require('../../../lib/resource/medicationPrescription');
 cases.type = 'medication';
 
 var na = null;

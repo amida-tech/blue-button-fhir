@@ -10,8 +10,7 @@ var na = null;
 cases[0] = {};
 
 cases[0].resources = [{
-    "type": "AdverseReaction",
-    "id": "a-0-0",
+    "id": "AdverseReaction/a-0-0",
     "content": {
         "resourceType": "AdverseReaction",
         "subject": na,
@@ -29,8 +28,7 @@ cases[0].resources = [{
         "didNotOccurFlag": false
     }
 }, {
-    "type": "AllergyIntolerance",
-    "id": "a-0-1",
+    "id": "AllergyIntolerance/a-0-1",
     "content": {
         "resourceType": "AllergyIntolerance",
         "criticality": "medium",
@@ -48,8 +46,7 @@ cases[0].resources = [{
         }]
     }
 }, {
-    "type": "Substance",
-    "id": "a-0-2",
+    "id": "Substance/a-0-2",
     "content": {
         "resourceType": "Substance",
         "text": na,
@@ -111,8 +108,7 @@ cases[0].result = {
 cases[1] = {};
 
 cases[1].resources = [{
-    "type": "AdverseReaction",
-    "id": "a-1-0",
+    "id": "AdverseReaction/a-1-0",
     "content": {
         "resourceType": "AdverseReaction",
         "subject": na,
@@ -130,8 +126,7 @@ cases[1].resources = [{
         "didNotOccurFlag": false
     }
 }, {
-    "type": "AllergyIntolerance",
-    "id": "a-1-1",
+    "id": "AllergyIntolerance/a-1-1",
     "content": {
         "resourceType": "AllergyIntolerance",
         "criticality": "medium",

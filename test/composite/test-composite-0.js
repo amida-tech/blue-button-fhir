@@ -43,21 +43,12 @@ describe('composite tests', function () {
             });
         });
 
-        var actual = fhir.toModel(resources);
-        expect(actual.data).to.deep.equal(expected);
-
-        var bundleEntry = resources.map(function (resource) {
-            return {
-                id: resource.type + '/' + resource.id,
-                content: resource.content
-            };
-        });
         var bundle = {
             resourceType: 'Bundle',
-            entry: bundleEntry
+            entry: resources
         };
 
-        var actualBundle = fhir.toModel(bundle);
-        expect(actualBundle.data).to.deep.equal(expected);
+        var actual = fhir.toModel(bundle);
+        expect(actual.data).to.deep.equal(expected);
     });
 });

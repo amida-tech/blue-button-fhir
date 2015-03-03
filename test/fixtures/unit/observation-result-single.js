@@ -10,8 +10,7 @@ var na = null;
 cases[0] = {};
 
 cases[0].resources = [{
-    "type": "Observation",
-    "id": "ors-0-0",
+    "id": "Observation/ors-0-0",
     "content": {
         "resourceType": "Observation",
         "name": {

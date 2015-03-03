@@ -10,8 +10,7 @@ var na = null;
 cases[0] = {};
 
 cases[0].resources = [{
-    "type": "Observation",
-    "id": "or-0-0",
+    "id": "Observation/or-0-0",
     "content": {
         "resourceType": "Observation",
         "name": {
@@ -61,8 +60,7 @@ cases[0].resources = [{
         }]
     }
 }, {
-    "type": "Observation",
-    "id": "or-0-1",
+    "id": "Observation/or-0-1",
     "content": {
         "resourceType": "Observation",
         "name": {
@@ -123,8 +121,7 @@ cases[0].resources = [{
         }]
     }
 }, {
-    "type": "Observation",
-    "id": "or-0-2",
+    "id": "Observation/or-0-2",
     "content": {
         "resourceType": "Observation",
         "name": {
@@ -185,8 +182,7 @@ cases[0].resources = [{
         }]
     }
 }, {
-    "type": "Observation",
-    "id": "or-0-3",
+    "id": "Observation/or-0-3",
     "content": {
         "resourceType": "Observation",
         "name": {
@@ -201,17 +197,17 @@ cases[0].resources = [{
         "reliability": "ok",
         "subject": na,
         "related": [{
-            "type": "has-component",
+            "id": "has-component",
             "target": {
                 "reference": "Observation/or-0-0"
             }
         }, {
-            "type": "has-component",
+            "id": "has-component",
             "target": {
                 "reference": "Observation/or-0-1"
             }
         }, {
-            "type": "has-component",
+            "id": "has-component",
             "target": {
                 "reference": "Observation/or-0-2"
             }

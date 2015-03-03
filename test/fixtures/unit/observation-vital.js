@@ -10,8 +10,7 @@ cases[0] = {};
 var na = null;
 
 cases[0].resources = [{
-    "type": "Observation",
-    "id": "ov-0-0",
+    "id": "Observation/ov-0-0",
     "content": {
         "resourceType": "Observation",
         "name": {
@@ -75,8 +74,7 @@ cases[0].result = {
 cases[1] = {};
 
 cases[1].resources = [{
-    "type": "Observation",
-    "id": "ov-1-0",
+    "id": "Observation/ov-1-0",
     "content": {
         "resourceType": "Observation",
         "name": {
@@ -140,8 +138,7 @@ cases[1].result = {
 cases[2] = {};
 
 cases[2].resources = [{
-    "type": "Observation",
-    "id": "ov-2-0",
+    "id": "Observation/ov-2-0",
     "content": {
         "resourceType": "Observation",
         "name": {
@@ -205,8 +202,7 @@ cases[2].result = {
 cases[3] = {};
 
 cases[3].resources = [{
-    "type": "Observation",
-    "id": "ov-3-0",
+    "id": "Observation/ov-3-0",
     "content": {
         "resourceType": "Observation",
         "name": {
@@ -270,8 +266,7 @@ cases[3].result = {
 cases[4] = {};
 
 cases[4].resources = [{
-    "type": "Observation",
-    "id": "ov-4-0",
+    "id": "Observation/ov-4-0",
     "content": {
         "resourceType": "Observation",
         "name": {
@@ -335,8 +330,7 @@ cases[4].result = {
 cases[5] = {};
 
 cases[5].resources = [{
-    "type": "Observation",
-    "id": "ov-5-0",
+    "id": "Observation/ov-5-0",
     "content": {
         "resourceType": "Observation",
         "name": {
@@ -400,8 +394,7 @@ cases[5].result = {
 cases[6] = {};
 
 cases[6].resources = [{
-    "type": "Observation",
-    "id": "ov-6-0",
+    "id": "Observation/ov-6-0",
     "content": {
         "resourceType": "Observation",
         "name": {
@@ -465,8 +458,7 @@ cases[6].result = {
 cases[7] = {};
 
 cases[7].resources = [{
-    "type": "Observation",
-    "id": "0",
+    "id": "Observation/0",
     "content": {
         "resourceType": "Observation",
         "name": {

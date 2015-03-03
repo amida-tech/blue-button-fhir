@@ -2,6 +2,9 @@
 
 var cases = module.exports = [];
 
+cases.template = require('../../../lib/resource/observation-result');
+cases.type = 'result';
+
 var na = null;
 
 cases[0] = {};

@@ -5,7 +5,6 @@ var bbm = require('blue-button-model');
 
 var resourceStore = require('../../lib/resourceStore');
 var fhir = require('../../lib/fhir');
-var condition = require('../../lib/resource/condition');
 var cases = require('../fixtures/unit/condition');
 
 var expect = chai.expect;
@@ -15,13 +14,14 @@ describe('condition resource unit', function () {
     var caseFn = function (n) {
         return function () {
             var c = cases[n];
-            var store = resourceStore.create();
-            var result = fhir.resourceToModel(store, condition, c.input.body);
+            var store = resourceStore.create(c.resources);
+            var result = fhir.resourceToModel(store, cases.template, c.input.body);
             expect(result).to.deep.equal(c.result);
-            var r = validator.validate(result, 'problem');
+            var r = validator.validate(result, cases.type);
             if (!r) {
                 console.log(JSON.stringify(validator.getLastError(), undefined, 2));
             }
+            expect(r).to.be.true;
         };
     };
 

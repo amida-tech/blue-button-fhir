@@ -2,6 +2,9 @@
 
 var cases = module.exports = [];
 
+cases.template = require('../../../lib/resource/observation-vital');
+cases.type = 'vital';
+
 cases[0] = {};
 
 var na = null;

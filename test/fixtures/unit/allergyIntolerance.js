@@ -2,6 +2,9 @@
 
 var cases = module.exports = [];
 
+cases.template = require('../../../lib/resource/allergyIntolerance');
+cases.type = 'allergy';
+
 var na = null;
 
 cases[0] = {};

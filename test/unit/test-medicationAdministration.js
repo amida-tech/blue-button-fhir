@@ -5,7 +5,6 @@ var bbm = require('blue-button-model');
 
 var resourceStore = require('../../lib/resourceStore');
 var fhir = require('../../lib/fhir');
-var medicationAdministration = require('../../lib/resource/medicationAdministration');
 var cases = require('../fixtures/unit/medicationAdministration');
 
 var expect = chai.expect;
@@ -15,12 +14,10 @@ describe('medicationAdministration resource unit', function () {
     var caseFn = function (n) {
         return function () {
             var c = cases[n];
-            var store = resourceStore.create();
-            store.addResources(c.resources);
-
-            var result = fhir.resourceToModel(store, medicationAdministration, c.input.body);
+            var store = resourceStore.create(c.resources);
+            var result = fhir.resourceToModel(store, cases.template, c.input.body);
             expect(result).to.deep.equal(c.result);
-            var r = validator.validate(result, 'medication');
+            var r = validator.validate(result, cases.type);
             if (!r) {
                 console.log(JSON.stringify(validator.getLastError(), undefined, 2));
             }

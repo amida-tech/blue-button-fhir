@@ -12,7 +12,7 @@ cases[0] = {};
 cases[0].resources = [{
     "type": "Observation",
     "id": "ors-0-0",
-    "body": {
+    "content": {
         "resourceType": "Observation",
         "name": {
             "coding": [{

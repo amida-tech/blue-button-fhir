@@ -12,7 +12,7 @@ cases[0] = {};
 cases[0].resources = [{
     "type": "Condition",
     "id": "c-0-0",
-    "body": {
+    "content": {
         "resourceType": "Condition",
         "status": "confirmed",
         "subject": na,
@@ -56,7 +56,7 @@ cases[1] = {};
 cases[1].resources = [{
     "type": "Condition",
     "id": "c-1-0",
-    "body": {
+    "content": {
         "resourceType": "Condition",
         "status": "confirmed",
         "subject": na,
@@ -96,7 +96,7 @@ cases[2] = {};
 cases[2].resources = [{
     "type": "Condition",
     "id": "c-2-0",
-    "body": {
+    "content": {
         "resourceType": "Condition",
         "status": "confirmed",
         "subject": na,

@@ -12,7 +12,7 @@ cases[0] = {};
 cases[0].resources = [{
     "type": "MedicationPrescription",
     "id": "ma-0-0",
-    "body": {
+    "content": {
         "resourceType": "MedicationPrescription",
         "status": "active",
         "patient": na,
@@ -77,7 +77,7 @@ cases[0].resources = [{
 }, {
     "type": "MedicationAdministration",
     "id": "ma-0-1",
-    "body": {
+    "content": {
         "resourceType": "MedicationAdministration",
         "status": "completed",
         "patient": na,

@@ -22,7 +22,7 @@ var testDescription = function (cases) {
         return function () {
             var c = cases[n];
             var store = resourceStore.create(c.resources);
-            var result = fhir.resourceToModel(store, cases.template, c.input.body);
+            var result = fhir.resourceToModel(store, cases.template, c.input.content);
             expect(result).to.deep.equal(c.result);
             var r = validator.validate(result, cases.type);
             if (!r) {

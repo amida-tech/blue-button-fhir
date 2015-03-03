@@ -12,7 +12,7 @@ cases[0] = {};
 cases[0].resources = [{
     "type": "Observation",
     "id": "or-0-0",
-    "body": {
+    "content": {
         "resourceType": "Observation",
         "name": {
             "coding": [{
@@ -63,7 +63,7 @@ cases[0].resources = [{
 }, {
     "type": "Observation",
     "id": "or-0-1",
-    "body": {
+    "content": {
         "resourceType": "Observation",
         "name": {
             "coding": [{
@@ -125,7 +125,7 @@ cases[0].resources = [{
 }, {
     "type": "Observation",
     "id": "or-0-2",
-    "body": {
+    "content": {
         "resourceType": "Observation",
         "name": {
             "coding": [{
@@ -187,7 +187,7 @@ cases[0].resources = [{
 }, {
     "type": "Observation",
     "id": "or-0-3",
-    "body": {
+    "content": {
         "resourceType": "Observation",
         "name": {
             "coding": [{

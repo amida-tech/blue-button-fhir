@@ -49,7 +49,7 @@ describe('composite tests', function () {
         var bundleEntry = resources.map(function (resource) {
             return {
                 id: resource.type + '/' + resource.id,
-                content: resource.body
+                content: resource.content
             };
         });
         var bundle = {

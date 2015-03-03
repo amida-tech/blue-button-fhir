@@ -2,14 +2,16 @@
 
 var cases = module.exports = [];
 
+cases.template = require('../../../lib/resource/observation-result');
+cases.type = 'result';
+
 var na = null;
 
 cases[0] = {};
 
 cases[0].resources = [{
-    "type": "Observation",
-    "id": "or-0-0",
-    "body": {
+    "id": "Observation/or-0-0",
+    "content": {
         "resourceType": "Observation",
         "name": {
             "coding": [{
@@ -58,9 +60,8 @@ cases[0].resources = [{
         }]
     }
 }, {
-    "type": "Observation",
-    "id": "or-0-1",
-    "body": {
+    "id": "Observation/or-0-1",
+    "content": {
         "resourceType": "Observation",
         "name": {
             "coding": [{
@@ -120,9 +121,8 @@ cases[0].resources = [{
         }]
     }
 }, {
-    "type": "Observation",
-    "id": "or-0-2",
-    "body": {
+    "id": "Observation/or-0-2",
+    "content": {
         "resourceType": "Observation",
         "name": {
             "coding": [{
@@ -182,9 +182,8 @@ cases[0].resources = [{
         }]
     }
 }, {
-    "type": "Observation",
-    "id": "or-0-3",
-    "body": {
+    "id": "Observation/or-0-3",
+    "content": {
         "resourceType": "Observation",
         "name": {
             "coding": [{
@@ -198,17 +197,17 @@ cases[0].resources = [{
         "reliability": "ok",
         "subject": na,
         "related": [{
-            "type": "has-component",
+            "id": "has-component",
             "target": {
                 "reference": "Observation/or-0-0"
             }
         }, {
-            "type": "has-component",
+            "id": "has-component",
             "target": {
                 "reference": "Observation/or-0-1"
             }
         }, {
-            "type": "has-component",
+            "id": "has-component",
             "target": {
                 "reference": "Observation/or-0-2"
             }

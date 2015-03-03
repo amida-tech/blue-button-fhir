@@ -2,14 +2,16 @@
 
 var cases = module.exports = [];
 
+cases.template = require('../../../lib/resource/medicationPrescription');
+cases.type = 'medication';
+
 var na = null;
 
 cases[0] = {};
 
 cases[0].resources = [{
-    "type": "MedicationPrescription",
-    "id": "mp-0-0",
-    "body": {
+    "id": "MedicationPrescription/mp-0-0",
+    "content": {
         "resourceType": "MedicationPrescription",
         "status": "completed",
         "patient": na,
@@ -58,9 +60,8 @@ cases[0].resources = [{
         }
     }
 }, {
-    "type": "Medication",
-    "id": "mp-0-1",
-    "body": {
+    "id": "Medication/mp-0-1",
+    "content": {
         "resourceType": "Medication",
         "text": {
             "status": "generated",
@@ -141,9 +142,8 @@ cases[0].result = {
 cases[1] = {};
 
 cases[1].resources = [{
-    "type": "MedicationPrescription",
-    "id": "mp-1-0",
-    "body": {
+    "id": "MedicationPrescription/mp-1-0",
+    "content": {
         "resourceType": "MedicationPrescription",
         "status": "active",
         "patient": na,
@@ -193,9 +193,8 @@ cases[1].result = {
 cases[2] = {};
 
 cases[2].resources = [{
-    "type": "MedicationPrescription",
-    "id": "mp-2-0",
-    "body": {
+    "id": "MedicationPrescription/mp-2-0",
+    "content": {
         "resourceType": "MedicationPrescription",
         "status": "completed",
         "patient": na,
@@ -264,9 +263,8 @@ cases[2].result = {
 cases[3] = {};
 
 cases[3].resources = [{
-    "type": "MedicationPrescription",
-    "id": "mp-3-0",
-    "body": {
+    "id": "MedicationPrescription/mp-3-0",
+    "content": {
         "resourceType": "MedicationPrescription",
         "status": "active",
         "patient": na,

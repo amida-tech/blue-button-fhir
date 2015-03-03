@@ -2,14 +2,16 @@
 
 var cases = module.exports = [];
 
+cases.template = require('../../../lib/resource/allergyIntolerance');
+cases.type = 'allergy';
+
 var na = null;
 
 cases[0] = {};
 
 cases[0].resources = [{
-    "type": "AdverseReaction",
-    "id": "a-0-0",
-    "body": {
+    "id": "AdverseReaction/a-0-0",
+    "content": {
         "resourceType": "AdverseReaction",
         "subject": na,
         "symptom": [{
@@ -26,9 +28,8 @@ cases[0].resources = [{
         "didNotOccurFlag": false
     }
 }, {
-    "type": "AllergyIntolerance",
-    "id": "a-0-1",
-    "body": {
+    "id": "AllergyIntolerance/a-0-1",
+    "content": {
         "resourceType": "AllergyIntolerance",
         "criticality": "medium",
         "sensitivityType": "allergy",
@@ -45,9 +46,8 @@ cases[0].resources = [{
         }]
     }
 }, {
-    "type": "Substance",
-    "id": "a-0-2",
-    "body": {
+    "id": "Substance/a-0-2",
+    "content": {
         "resourceType": "Substance",
         "text": na,
         "type": {
@@ -108,9 +108,8 @@ cases[0].result = {
 cases[1] = {};
 
 cases[1].resources = [{
-    "type": "AdverseReaction",
-    "id": "a-1-0",
-    "body": {
+    "id": "AdverseReaction/a-1-0",
+    "content": {
         "resourceType": "AdverseReaction",
         "subject": na,
         "symptom": [{
@@ -127,9 +126,8 @@ cases[1].resources = [{
         "didNotOccurFlag": false
     }
 }, {
-    "type": "AllergyIntolerance",
-    "id": "a-1-1",
-    "body": {
+    "id": "AllergyIntolerance/a-1-1",
+    "content": {
         "resourceType": "AllergyIntolerance",
         "criticality": "medium",
         "sensitivityType": "allergy",

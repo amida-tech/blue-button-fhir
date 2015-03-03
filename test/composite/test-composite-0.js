@@ -3,7 +3,6 @@
 var chai = require('chai');
 var bbu = require('blue-button-util');
 
-var resourceStore = require('../../lib/resourceStore');
 var fhir = require('../../index');
 
 var cases_a = require('../fixtures/unit/allergyIntolerance');
@@ -43,21 +42,12 @@ describe('composite tests', function () {
             });
         });
 
-        var actual = fhir.toModel(resources);
-        expect(actual.data).to.deep.equal(expected);
-
-        var bundleEntry = resources.map(function (resource) {
-            return {
-                id: resource.type + '/' + resource.id,
-                content: resource.body
-            };
-        });
         var bundle = {
             resourceType: 'Bundle',
-            entry: bundleEntry
+            entry: resources
         };
 
-        var actualBundle = fhir.toModel(bundle);
-        expect(actualBundle.data).to.deep.equal(expected);
+        var actual = fhir.toModel(bundle);
+        expect(actual.data).to.deep.equal(expected);
     });
 });

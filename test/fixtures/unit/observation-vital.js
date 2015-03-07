@@ -2,12 +2,9 @@
 
 var cases = module.exports = [];
 
-cases.template = require('../../../lib/resource/observation-vital');
-cases.type = 'vital';
+var na = null;
 
 cases[0] = {};
-
-var na = null;
 
 cases[0].resources = [{
     "id": "Observation/ov-0-0",

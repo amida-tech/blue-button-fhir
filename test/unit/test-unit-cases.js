@@ -4,26 +4,22 @@ var chai = require('chai');
 var bbm = require('blue-button-model');
 
 var fhir = require('../../lib/fhir');
-
-var aiCases = require('../fixtures/unit/allergyIntolerance');
-var cCases = require('../fixtures/unit/condition');
-var maCases = require('../fixtures/unit/medicationAdministration');
-var mpCases = require('../fixtures/unit/medicationPrescription');
-var orsCases = require('../fixtures/unit/observation-result-single');
-var orCases = require('../fixtures/unit/observation-result');
-var ovCases = require('../fixtures/unit/observation-vital');
+var templates = require('../../lib/templates');
 
 var expect = chai.expect;
 var validator = bbm.validator;
 
-var testDescription = function (cases) {
+var testDescription = function (casesKey) {
+    var cases = require('../fixtures/unit/' + casesKey);
+
     var caseFn = function (n) {
         return function () {
             var c = cases[n];
             var resourceDictionary = fhir.toResourceDictionary(c.resources);
-            var result = fhir.resourceToModel(resourceDictionary, cases.template, c.input.content);
+            var template = templates[casesKey];
+            var result = fhir.resourceToModel(resourceDictionary, template, c.input.content);
             expect(result).to.deep.equal(c.result);
-            var r = validator.validate(result, cases.type);
+            var r = validator.validate(result, template.type);
             if (!r) {
                 console.log(JSON.stringify(validator.getLastError(), undefined, 2));
             }
@@ -38,10 +34,10 @@ var testDescription = function (cases) {
     };
 };
 
-describe('allergyIntolerance resource unit', testDescription(aiCases));
-describe('condition resource unit', testDescription(cCases));
-describe('medicationAdministration resource unit', testDescription(maCases));
-describe('medicationPrescription resource unit', testDescription(mpCases));
-describe('observation-result-single resource unit', testDescription(orsCases));
-describe('observation-result resource unit', testDescription(orCases));
-describe('observation-vital resource unit', testDescription(ovCases));
+describe('allergyIntolerance resource unit', testDescription('allergyIntolerance'));
+describe('condition resource unit', testDescription('condition'));
+describe('medicationAdministration resource unit', testDescription('medicationAdministration'));
+describe('medicationPrescription resource unit', testDescription('medicationPrescription'));
+describe('observation-result-single resource unit', testDescription('observation-result-single'));
+describe('observation-result resource unit', testDescription('observation-result'));
+describe('observation-vital resource unit', testDescription('observation-vital'));

@@ -2,9 +2,6 @@
 
 var cases = module.exports = [];
 
-cases.template = require('../../../lib/resource/condition');
-cases.type = 'problem';
-
 var na = null;
 
 cases[0] = {};

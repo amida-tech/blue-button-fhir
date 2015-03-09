@@ -1,6 +1,6 @@
 {
     "name": "blue-button-fhir",
-    "version": "1.4.0",
+    "version": "1.4.1",
     "description": "Blue Button FHIR to Model Translator",
     "main": "./index.js",
     "directories": {
@@ -24,7 +24,8 @@
     },
     "dependencies": {
         "blue-button-meta": "~1.3.0",
-        "blue-button-util": "~1.4.0",
+        "blue-button-util": "~1.4.1",
+        "blue-button-json2json": "~1.4.0",
         "bunyan": "~1.2.3",
         "lodash": "~2.4.1"
     },

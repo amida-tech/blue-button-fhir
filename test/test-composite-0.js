@@ -3,16 +3,15 @@
 var chai = require('chai');
 var bbu = require('blue-button-util');
 
-var resourceStore = require('../../lib/resourceStore');
-var fhir = require('../../index');
+var fhir = require('../index');
 
-var cases_a = require('../fixtures/unit/allergyIntolerance');
-var cases_c = require('../fixtures/unit/condition');
-var cases_ma = require('../fixtures/unit/medicationAdministration');
-var cases_mp = require('../fixtures/unit/medicationPrescription');
-var cases_ors = require('../fixtures/unit/observation-result-single');
-var cases_or = require('../fixtures/unit/observation-result');
-var cases_ov = require('../fixtures/unit/observation-vital');
+var cases_a = require('./fixtures/unit/allergyIntolerance');
+var cases_c = require('./fixtures/unit/condition');
+var cases_ma = require('./fixtures/unit/medicationAdministration');
+var cases_mp = require('./fixtures/unit/medicationPrescription');
+var cases_ors = require('./fixtures/unit/observation-result-single');
+var cases_or = require('./fixtures/unit/observation-result');
+var cases_ov = require('./fixtures/unit/observation-vital');
 
 var expect = chai.expect;
 var arrayset = bbu.arrayset;
@@ -43,21 +42,25 @@ describe('composite tests', function () {
             });
         });
 
-        var actual = fhir.toModel(resources);
-        expect(actual.data).to.deep.equal(expected);
-
-        var bundleEntry = resources.map(function (resource) {
-            return {
-                id: resource.type + '/' + resource.id,
-                content: resource.body
-            };
-        });
         var bundle = {
             resourceType: 'Bundle',
-            entry: bundleEntry
+            entry: resources
         };
 
-        var actualBundle = fhir.toModel(bundle);
-        expect(actualBundle.data).to.deep.equal(expected);
+        var actual = fhir.toModel(bundle);
+        expect(actual.data).to.deep.equal(expected);
+
+        var oldTypeResources = resources.map(function (resource) {
+            var p = resource.id.split('/');
+            var r = {
+                type: p[0],
+                id: p[1],
+                body: resource.content
+            };
+            console.log(r);
+            return r;
+        });
+        var actualBC = fhir.toModel(oldTypeResources);
+        expect(actualBC.data).to.deep.equal(expected);
     });
 });

@@ -3,14 +3,14 @@
 var chai = require('chai');
 var bbm = require('blue-button-model');
 
-var fhir = require('../../lib/fhir');
-var templates = require('../../lib/templates');
+var fhir = require('../lib/fhir');
+var templates = require('../lib/templates');
 
 var expect = chai.expect;
 var validator = bbm.validator;
 
 var testDescription = function (casesKey) {
-    var cases = require('../fixtures/unit/' + casesKey);
+    var cases = require('./fixtures/unit/' + casesKey);
 
     var caseFn = function (n) {
         return function () {

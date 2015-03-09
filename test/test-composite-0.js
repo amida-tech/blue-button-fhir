@@ -3,15 +3,15 @@
 var chai = require('chai');
 var bbu = require('blue-button-util');
 
-var fhir = require('../../index');
+var fhir = require('../index');
 
-var cases_a = require('../fixtures/unit/allergyIntolerance');
-var cases_c = require('../fixtures/unit/condition');
-var cases_ma = require('../fixtures/unit/medicationAdministration');
-var cases_mp = require('../fixtures/unit/medicationPrescription');
-var cases_ors = require('../fixtures/unit/observation-result-single');
-var cases_or = require('../fixtures/unit/observation-result');
-var cases_ov = require('../fixtures/unit/observation-vital');
+var cases_a = require('./fixtures/unit/allergyIntolerance');
+var cases_c = require('./fixtures/unit/condition');
+var cases_ma = require('./fixtures/unit/medicationAdministration');
+var cases_mp = require('./fixtures/unit/medicationPrescription');
+var cases_ors = require('./fixtures/unit/observation-result-single');
+var cases_or = require('./fixtures/unit/observation-result');
+var cases_ov = require('./fixtures/unit/observation-vital');
 
 var expect = chai.expect;
 var arrayset = bbu.arrayset;
@@ -51,9 +51,10 @@ describe('composite tests', function () {
         expect(actual.data).to.deep.equal(expected);
 
         var oldTypeResources = resources.map(function (resource) {
+            var p = resource.id.split('/');
             var r = {
-                type: resource.content.resourceType,
-                id: resource.id.split('/')[1],
+                type: p[0],
+                id: p[1],
                 body: resource.content
             };
             console.log(r);

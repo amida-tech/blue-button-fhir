@@ -24,8 +24,8 @@
     },
     "dependencies": {
         "blue-button-meta": "~1.3.0",
-        "blue-button-util": "git://github.com/amida-tech/blue-button-util.git#v1.4.1",
-        "blue-button-json2json": "git://github.com/amida-tech/blue-button-json2json.git#master",
+        "blue-button-util": "~1.4.1",
+        "blue-button-json2json": "~1.4.0",
         "bunyan": "~1.2.3",
         "lodash": "~2.4.1"
     },

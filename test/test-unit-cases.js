@@ -41,3 +41,4 @@ describe('medicationPrescription resource unit', testDescription('medicationPres
 describe('observation-result-single resource unit', testDescription('observation-result-single'));
 describe('observation-result resource unit', testDescription('observation-result'));
 describe('observation-vital resource unit', testDescription('observation-vital'));
+describe('patient resource unit', testDescription('patient'));

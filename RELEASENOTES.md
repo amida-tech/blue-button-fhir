@@ -1,3 +1,7 @@
+# v1.5.0
+
+- Patient resource is now translated to blue-button-model.
+
 # v1.4.1 - March 8, 2015
 
 - Move template based json tranformations to blue-button-json2jsom 

@@ -12,6 +12,7 @@ var cases_mp = require('./fixtures/unit/medicationPrescription');
 var cases_ors = require('./fixtures/unit/observation-result-single');
 var cases_or = require('./fixtures/unit/observation-result');
 var cases_ov = require('./fixtures/unit/observation-vital');
+var cases_p = require('./fixtures/unit/patient');
 
 var expect = chai.expect;
 var arrayset = bbu.arrayset;
@@ -41,6 +42,8 @@ describe('composite tests', function () {
                 expected[sectionName].push(c.result);
             });
         });
+        arrayset.append(resources, cases_p[0].resources);
+        expected.demographics = cases_p[0].result;
 
         var bundle = {
             resourceType: 'Bundle',
@@ -57,7 +60,6 @@ describe('composite tests', function () {
                 id: p[1],
                 body: resource.content
             };
-            console.log(r);
             return r;
         });
         var actualBC = fhir.toModel(oldTypeResources);

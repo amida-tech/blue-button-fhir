@@ -11,6 +11,8 @@ FHIR to Blue Button Model Translator
 This library translates [FHIR Resource Bundles](http://www.hl7.org/implement/standards/fhir/extras.html) to [blue button model](https://github.com/amida-tech/blue-button).
 
 Currently the following resources are supported in Bundles
+* Patient
+ * No consistency is checked between the Patient resource and patient references in other objects.
 * Allergy Intolerance
  * Adverse Reaction and Substance resources that are externally referenced from any Allergy Intolerance resource are assumed to be in the Bundle.
 * Condition
@@ -31,8 +33,9 @@ and translate a FHIR Resource Bundle
 ``` javascript
 var model = bbfhir.toModel(input);
 ```
-Only allergies, vitals, results, medications and problems sections of blue button data are filled. 
+Demographics,  allergies, vitals, results, medications and problems sections of blue button data are filled. 
 ``` javascript
+console.log(model.data.demographics);
 console.log(model.data.allergies);
 console.log(model.data.vitals);
 console.log(model.data.results);

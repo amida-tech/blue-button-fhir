@@ -1,6 +1,7 @@
 "use strict";
 
 var chai = require('chai');
+var _ = require('lodash');
 var bbm = require('blue-button-model');
 
 var fhir = require('../lib/fhir');
@@ -15,7 +16,14 @@ var testDescription = function (casesKey) {
     var caseFn = function (n) {
         return function () {
             var c = cases[n];
-            var resourceDictionary = fhir.toResourceDictionary(c.resources);
+            var bundleEntries = c.resources.map(function (entry) {
+                return {
+                    resource: _.assign({
+                        id: entry.id
+                    }, entry.content)
+                };
+            });
+            var resourceDictionary = fhir.toResourceDictionary(bundleEntries);
             var template = templates[casesKey];
             var result = fhir.resourceToModel(resourceDictionary, template, c.input.content);
             expect(result).to.deep.equal(c.result);

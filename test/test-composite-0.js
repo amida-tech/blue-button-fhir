@@ -52,17 +52,5 @@ describe('composite tests', function () {
 
         var actual = fhir.toModel(bundle);
         expect(actual.data).to.deep.equal(expected);
-
-        var oldTypeResources = resources.map(function (resource) {
-            var p = resource.id.split('/');
-            var r = {
-                type: p[0],
-                id: p[1],
-                body: resource.content
-            };
-            return r;
-        });
-        var actualBC = fhir.toModel(oldTypeResources);
-        expect(actualBC.data).to.deep.equal(expected);
     });
 });

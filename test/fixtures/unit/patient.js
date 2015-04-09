@@ -38,7 +38,7 @@ cases[0].resources = [{
                 "display": "Female"
             }]
         },
-        "birthdate": "1975-05-01",
+        "birthDate": "1975-05-01",
         "address": [{
             "use": "home",
             "line": [
@@ -46,7 +46,7 @@ cases[0].resources = [{
             ],
             "city": "Beaverton",
             "state": "OR",
-            "zip": "97867",
+            "postalCode": "97867",
             "country": "US"
         }],
         "maritalStatus": {

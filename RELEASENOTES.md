@@ -1,6 +1,7 @@
-# v1.5.0
+# v1.5.0 - TBD
 
 - Patient resource is now translated to blue-button-model.
+- Only DTSU2 bundles are accepted.  Other bundles will need to be externally shimmed
 
 # v1.4.1 - March 8, 2015
 

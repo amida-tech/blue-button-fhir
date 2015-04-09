@@ -7,8 +7,8 @@ var na = null;
 cases[0] = {};
 
 cases[0].resources = [{
-    "id": "Condition/c-0-0",
-    "content": {
+    "resource": {
+        "id": "Condition/c-0-0",
         "resourceType": "Condition",
         "status": "confirmed",
         "subject": na,
@@ -50,8 +50,8 @@ cases[0].result = {
 cases[1] = {};
 
 cases[1].resources = [{
-    "id": "Condition/c-1-0",
-    "content": {
+    "resource": {
+        "id": "Condition/c-1-0",
         "resourceType": "Condition",
         "status": "confirmed",
         "subject": na,
@@ -89,8 +89,8 @@ cases[1].result = {
 cases[2] = {};
 
 cases[2].resources = [{
-    "id": "Condition/c-2-0",
-    "content": {
+    "resource": {
+        "id": "Condition/c-2-0",
         "resourceType": "Condition",
         "status": "confirmed",
         "subject": na,

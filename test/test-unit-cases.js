@@ -16,22 +16,15 @@ var testDescription = function (casesKey) {
     var caseFn = function (n) {
         return function () {
             var c = cases[n];
-            var bundleEntries = c.resources.map(function (entry) {
-                return {
-                    resource: _.assign({
-                        id: entry.id
-                    }, entry.content)
-                };
-            });
-            var resourceDictionary = fhir.toResourceDictionary(bundleEntries);
+            var resourceDictionary = fhir.toResourceDictionary(c.resources);
             var template = templates[casesKey];
-            var result = fhir.resourceToModel(resourceDictionary, template, c.input.content);
+            var result = fhir.resourceToModel(resourceDictionary, template, c.input.resource);
             expect(result).to.deep.equal(c.result);
             var r = validator.validate(result, template.type);
             if (!r) {
                 console.log(JSON.stringify(validator.getLastError(), undefined, 2));
             }
-            expect(r).to.be.true;
+            expect(r).to.equal(true);
         };
     };
 

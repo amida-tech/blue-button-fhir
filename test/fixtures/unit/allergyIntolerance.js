@@ -7,8 +7,8 @@ var na = null;
 cases[0] = {};
 
 cases[0].resources = [{
-    "id": "AdverseReaction/a-0-0",
-    "content": {
+    "resource": {
+        "id": "AdverseReaction/a-0-0",
         "resourceType": "AdverseReaction",
         "subject": na,
         "symptom": [{
@@ -25,8 +25,8 @@ cases[0].resources = [{
         "didNotOccurFlag": false
     }
 }, {
-    "id": "AllergyIntolerance/a-0-1",
-    "content": {
+    "resource": {
+        "id": "AllergyIntolerance/a-0-1",
         "resourceType": "AllergyIntolerance",
         "criticality": "medium",
         "sensitivityType": "allergy",
@@ -43,8 +43,8 @@ cases[0].resources = [{
         }]
     }
 }, {
-    "id": "Substance/a-0-2",
-    "content": {
+    "resource": {
+        "id": "Substance/a-0-2",
         "resourceType": "Substance",
         "text": na,
         "type": {
@@ -105,8 +105,8 @@ cases[0].result = {
 cases[1] = {};
 
 cases[1].resources = [{
-    "id": "AdverseReaction/a-1-0",
-    "content": {
+    "resource": {
+        "id": "AdverseReaction/a-1-0",
         "resourceType": "AdverseReaction",
         "subject": na,
         "symptom": [{
@@ -123,8 +123,8 @@ cases[1].resources = [{
         "didNotOccurFlag": false
     }
 }, {
-    "id": "AllergyIntolerance/a-1-1",
-    "content": {
+    "resource": {
+        "id": "AllergyIntolerance/a-1-1",
         "resourceType": "AllergyIntolerance",
         "criticality": "medium",
         "sensitivityType": "allergy",

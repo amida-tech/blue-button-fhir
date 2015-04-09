@@ -7,8 +7,8 @@ var na = null;
 cases[0] = {};
 
 cases[0].resources = [{
-    "id": "Patient/p-0-0",
-    "content": {
+    "resource": {
+        "id": "Patient/p-0-0",
         "resourceType": "Patient",
         "identifier": [{
             "system": "urn:oid:2.16.840.1.113883.19.5.99999.2",

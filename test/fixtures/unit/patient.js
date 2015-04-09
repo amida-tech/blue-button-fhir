@@ -33,6 +33,14 @@ cases[0].resources = [{
         }],
         "gender": "female",
         "birthDate": "1975-05-01",
+        "communication": [{
+            "language": {
+                "coding": [{
+                    "code": "en-US",
+                    "system": "urn:ietf:params:language"
+                }]
+            }
+        }],
         "address": [{
             "use": "home",
             "line": [
@@ -104,6 +112,9 @@ cases[0].result = {
     }, {
         "identifier": "2.16.840.1.113883.4.1",
         "extension": "111-00-2330"
+    }],
+    "languages": [{
+        "language": "en-US"
     }],
     "marital_status": "Married",
     "addresses": [{

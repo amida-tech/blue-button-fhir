@@ -7,8 +7,8 @@ var na = null;
 cases[0] = {};
 
 cases[0].resources = [{
-    "id": "MedicationPrescription/mp-0-0",
-    "content": {
+    "resource": {
+        "id": "MedicationPrescription/mp-0-0",
         "resourceType": "MedicationPrescription",
         "status": "completed",
         "patient": na,
@@ -57,8 +57,8 @@ cases[0].resources = [{
         }
     }
 }, {
-    "id": "Medication/mp-0-1",
-    "content": {
+    "resource": {
+        "id": "Medication/mp-0-1",
         "resourceType": "Medication",
         "text": {
             "status": "generated",
@@ -139,8 +139,8 @@ cases[0].result = {
 cases[1] = {};
 
 cases[1].resources = [{
-    "id": "MedicationPrescription/mp-1-0",
-    "content": {
+    "resource": {
+        "id": "MedicationPrescription/mp-1-0",
         "resourceType": "MedicationPrescription",
         "status": "active",
         "patient": na,
@@ -190,8 +190,8 @@ cases[1].result = {
 cases[2] = {};
 
 cases[2].resources = [{
-    "id": "MedicationPrescription/mp-2-0",
-    "content": {
+    "resource": {
+        "id": "MedicationPrescription/mp-2-0",
         "resourceType": "MedicationPrescription",
         "status": "completed",
         "patient": na,
@@ -260,8 +260,8 @@ cases[2].result = {
 cases[3] = {};
 
 cases[3].resources = [{
-    "id": "MedicationPrescription/mp-3-0",
-    "content": {
+    "resource": {
+        "id": "MedicationPrescription/mp-3-0",
         "resourceType": "MedicationPrescription",
         "status": "active",
         "patient": na,

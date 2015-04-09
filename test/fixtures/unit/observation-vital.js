@@ -7,8 +7,8 @@ var na = null;
 cases[0] = {};
 
 cases[0].resources = [{
-    "id": "Observation/ov-0-0",
-    "content": {
+    "resource": {
+        "id": "Observation/ov-0-0",
         "resourceType": "Observation",
         "name": {
             "coding": [{
@@ -71,8 +71,8 @@ cases[0].result = {
 cases[1] = {};
 
 cases[1].resources = [{
-    "id": "Observation/ov-1-0",
-    "content": {
+    "resource": {
+        "id": "Observation/ov-1-0",
         "resourceType": "Observation",
         "name": {
             "coding": [{
@@ -135,8 +135,8 @@ cases[1].result = {
 cases[2] = {};
 
 cases[2].resources = [{
-    "id": "Observation/ov-2-0",
-    "content": {
+    "resource": {
+        "id": "Observation/ov-2-0",
         "resourceType": "Observation",
         "name": {
             "coding": [{
@@ -199,8 +199,8 @@ cases[2].result = {
 cases[3] = {};
 
 cases[3].resources = [{
-    "id": "Observation/ov-3-0",
-    "content": {
+    "resource": {
+        "id": "Observation/ov-3-0",
         "resourceType": "Observation",
         "name": {
             "coding": [{
@@ -263,8 +263,8 @@ cases[3].result = {
 cases[4] = {};
 
 cases[4].resources = [{
-    "id": "Observation/ov-4-0",
-    "content": {
+    "resource": {
+        "id": "Observation/ov-4-0",
         "resourceType": "Observation",
         "name": {
             "coding": [{
@@ -327,8 +327,8 @@ cases[4].result = {
 cases[5] = {};
 
 cases[5].resources = [{
-    "id": "Observation/ov-5-0",
-    "content": {
+    "resource": {
+        "id": "Observation/ov-5-0",
         "resourceType": "Observation",
         "name": {
             "coding": [{
@@ -391,8 +391,8 @@ cases[5].result = {
 cases[6] = {};
 
 cases[6].resources = [{
-    "id": "Observation/ov-6-0",
-    "content": {
+    "resource": {
+        "id": "Observation/ov-6-0",
         "resourceType": "Observation",
         "name": {
             "coding": [{
@@ -455,8 +455,8 @@ cases[6].result = {
 cases[7] = {};
 
 cases[7].resources = [{
-    "id": "Observation/0",
-    "content": {
+    "resource": {
+        "id": "Observation/0",
         "resourceType": "Observation",
         "name": {
             "coding": [{

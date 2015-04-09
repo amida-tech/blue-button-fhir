@@ -7,8 +7,8 @@ var na = null;
 cases[0] = {};
 
 cases[0].resources = [{
-    "id": "MedicationPrescription/ma-0-0",
-    "content": {
+    "resource": {
+        "id": "MedicationPrescription/ma-0-0",
         "resourceType": "MedicationPrescription",
         "status": "active",
         "patient": na,
@@ -71,8 +71,8 @@ cases[0].resources = [{
         }
     }
 }, {
-    "id": "MedicationAdministration/ma-0-1",
-    "content": {
+    "resource": {
+        "id": "MedicationAdministration/ma-0-1",
         "resourceType": "MedicationAdministration",
         "status": "completed",
         "patient": na,

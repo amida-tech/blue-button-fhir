@@ -7,8 +7,8 @@ var na = null;
 cases[0] = {};
 
 cases[0].resources = [{
-    "id": "Observation/ors-0-0",
-    "content": {
+    "resource": {
+        "id": "Observation/ors-0-0",
         "resourceType": "Observation",
         "name": {
             "coding": [{

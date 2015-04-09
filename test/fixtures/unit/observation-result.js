@@ -7,8 +7,8 @@ var na = null;
 cases[0] = {};
 
 cases[0].resources = [{
-    "id": "Observation/or-0-0",
-    "content": {
+    "resource": {
+        "id": "Observation/or-0-0",
         "resourceType": "Observation",
         "name": {
             "coding": [{
@@ -57,8 +57,8 @@ cases[0].resources = [{
         }]
     }
 }, {
-    "id": "Observation/or-0-1",
-    "content": {
+    "resource": {
+        "id": "Observation/or-0-1",
         "resourceType": "Observation",
         "name": {
             "coding": [{
@@ -118,8 +118,8 @@ cases[0].resources = [{
         }]
     }
 }, {
-    "id": "Observation/or-0-2",
-    "content": {
+    "resource": {
+        "id": "Observation/or-0-2",
         "resourceType": "Observation",
         "name": {
             "coding": [{
@@ -179,8 +179,8 @@ cases[0].resources = [{
         }]
     }
 }, {
-    "id": "Observation/or-0-3",
-    "content": {
+    "resource": {
+        "id": "Observation/or-0-3",
         "resourceType": "Observation",
         "name": {
             "coding": [{
@@ -301,9 +301,8 @@ cases[0].result = {
 cases[1] = {};
 
 cases[1].resources = [{
-    "type": "Observation",
-    "id": "Observation/or-1-0",
-    "content": {
+    "resource": {
+        "id": "Observation/or-1-0",
         "resourceType": "Observation",
         "name": {
             "coding": [{
@@ -337,8 +336,8 @@ cases[1].resources = [{
         }
     }
 }, {
-    "id": "Observation/or-1-1",
-    "content": {
+    "resource": {
+        "id": "Observation/or-1-1",
         "resourceType": "Observation",
         "name": {
             "coding": [{

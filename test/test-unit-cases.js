@@ -1,6 +1,7 @@
 "use strict";
 
 var chai = require('chai');
+var _ = require('lodash');
 var bbm = require('blue-button-model');
 
 var fhir = require('../lib/fhir');
@@ -17,13 +18,13 @@ var testDescription = function (casesKey) {
             var c = cases[n];
             var resourceDictionary = fhir.toResourceDictionary(c.resources);
             var template = templates[casesKey];
-            var result = fhir.resourceToModel(resourceDictionary, template, c.input.content);
+            var result = fhir.resourceToModel(resourceDictionary, template, c.input.resource);
             expect(result).to.deep.equal(c.result);
             var r = validator.validate(result, template.type);
             if (!r) {
                 console.log(JSON.stringify(validator.getLastError(), undefined, 2));
             }
-            expect(r).to.be.true;
+            expect(r).to.equal(true);
         };
     };
 

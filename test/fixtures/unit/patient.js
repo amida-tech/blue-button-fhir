@@ -31,13 +31,7 @@ cases[0].resources = [{
             "value": "(816)276-6909",
             "use": "home"
         }],
-        "gender": {
-            "coding": [{
-                "system": "http://hl7.org/fhir/v3/AdministrativeGender",
-                "code": "F",
-                "display": "Female"
-            }]
-        },
+        "gender": "female",
         "birthDate": "1975-05-01",
         "address": [{
             "use": "home",
@@ -66,19 +60,19 @@ cases[0].resources = [{
                 }]
             }
         }, {
-            "url": "http://hl7.org/fhir/Profile/us-core#race",
+            "url": "http://hl7.org/fhir/StructureDefinition/us-core-race",
             "valueCodeableConcept": {
                 "coding": [{
-                    "system": "http://hl7.org/fhir/v3/Race",
+                    "system": "urn:oid:2.16.840.1.113883.6.238",
                     "code": "2106-3",
                     "display": "White"
                 }]
             }
         }, {
-            "url": "http://hl7.org/fhir/Profile/us-core#ethnicity",
+            "url": "http://hl7.org/fhir/StructureDefinition/us-core-ethnicity",
             "valueCodeableConcept": {
                 "coding": [{
-                    "system": "http://hl7.org/fhir/v3/Ethnicity",
+                    "system": "urn:oid:2.16.840.1.113883.6.238",
                     "code": "2186-5",
                     "display": "Not Hispanic or Latino"
                 }]

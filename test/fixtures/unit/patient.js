@@ -17,7 +17,7 @@ cases[0].resources = [{
             "system": "urn:oid:2.16.840.1.113883.4.1",
             "value": "111-00-2330"
         }],
-        "name": {
+        "name": [{
             "family": [
                 "Jones"
             ],
@@ -25,7 +25,7 @@ cases[0].resources = [{
                 "Isabella",
                 "Isa"
             ]
-        },
+        }],
         "telecom": [{
             "system": "phone",
             "value": "(816)276-6909",

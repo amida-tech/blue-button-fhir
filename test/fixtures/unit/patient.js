@@ -135,3 +135,36 @@ cases[0].result = {
     "ethnicity": "Not Hispanic or Latino",
     "religion": "Christian (non-Catholic, non-specific)"
 };
+
+cases[1] = {};
+
+cases[1].resources = [{
+    resource: {
+        "resourceType": "Patient",
+        "identifier": [{
+            "system": "http://amida-tech.com",
+            "value": "JOE_DOE_IDENTIFIER"
+        }],
+        "name": [{
+            "family": [
+                "DOE"
+            ],
+            "given": [
+                "JOE"
+            ]
+        }]
+    }
+}];
+
+cases[1].input = cases[1].resources[0];
+
+cases[1].result = {
+    "name": {
+        "last": "DOE",
+        "first": "JOE"
+    },
+    "identifiers": [{
+        "identifier": "http://amida-tech.com",
+        "extension": "JOE_DOE_IDENTIFIER"
+    }]
+};

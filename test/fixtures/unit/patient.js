@@ -17,7 +17,7 @@ cases[0].resources = [{
             "system": "urn:oid:2.16.840.1.113883.4.1",
             "value": "111-00-2330"
         }],
-        "name": {
+        "name": [{
             "family": [
                 "Jones"
             ],
@@ -25,7 +25,7 @@ cases[0].resources = [{
                 "Isabella",
                 "Isa"
             ]
-        },
+        }],
         "telecom": [{
             "system": "phone",
             "value": "(816)276-6909",
@@ -134,4 +134,37 @@ cases[0].result = {
     "race": "White",
     "ethnicity": "Not Hispanic or Latino",
     "religion": "Christian (non-Catholic, non-specific)"
+};
+
+cases[1] = {};
+
+cases[1].resources = [{
+    resource: {
+        "resourceType": "Patient",
+        "identifier": [{
+            "system": "http://amida-tech.com",
+            "value": "JOE_DOE_IDENTIFIER"
+        }],
+        "name": [{
+            "family": [
+                "DOE"
+            ],
+            "given": [
+                "JOE"
+            ]
+        }]
+    }
+}];
+
+cases[1].input = cases[1].resources[0];
+
+cases[1].result = {
+    "name": {
+        "last": "DOE",
+        "first": "JOE"
+    },
+    "identifiers": [{
+        "identifier": "http://amida-tech.com",
+        "extension": "JOE_DOE_IDENTIFIER"
+    }]
 };

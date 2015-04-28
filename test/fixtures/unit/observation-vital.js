@@ -10,7 +10,7 @@ cases[0].resources = [{
     "resource": {
         "id": "Observation/ov-0-0",
         "resourceType": "Observation",
-        "name": {
+        "code": {
             "coding": [{
                 "system": "http://loinc.org",
                 "code": "8302-2",
@@ -74,7 +74,7 @@ cases[1].resources = [{
     "resource": {
         "id": "Observation/ov-1-0",
         "resourceType": "Observation",
-        "name": {
+        "code": {
             "coding": [{
                 "system": "http://loinc.org",
                 "code": "3141-9",
@@ -138,7 +138,7 @@ cases[2].resources = [{
     "resource": {
         "id": "Observation/ov-2-0",
         "resourceType": "Observation",
-        "name": {
+        "code": {
             "coding": [{
                 "system": "http://loinc.org",
                 "code": "39156-5",
@@ -202,7 +202,7 @@ cases[3].resources = [{
     "resource": {
         "id": "Observation/ov-3-0",
         "resourceType": "Observation",
-        "name": {
+        "code": {
             "coding": [{
                 "system": "http://loinc.org",
                 "code": "8480-6",
@@ -266,7 +266,7 @@ cases[4].resources = [{
     "resource": {
         "id": "Observation/ov-4-0",
         "resourceType": "Observation",
-        "name": {
+        "code": {
             "coding": [{
                 "system": "http://loinc.org",
                 "code": "8480-6",
@@ -330,7 +330,7 @@ cases[5].resources = [{
     "resource": {
         "id": "Observation/ov-5-0",
         "resourceType": "Observation",
-        "name": {
+        "code": {
             "coding": [{
                 "system": "http://loinc.org",
                 "code": "8462-4",
@@ -394,7 +394,7 @@ cases[6].resources = [{
     "resource": {
         "id": "Observation/ov-6-0",
         "resourceType": "Observation",
-        "name": {
+        "code": {
             "coding": [{
                 "system": "http://loinc.org",
                 "code": "8462-4",
@@ -458,7 +458,7 @@ cases[7].resources = [{
     "resource": {
         "id": "Observation/0",
         "resourceType": "Observation",
-        "name": {
+        "code": {
             "coding": [{
                 "system": "http://loinc.org",
                 "code": "8284-2",

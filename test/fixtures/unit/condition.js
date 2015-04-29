@@ -12,7 +12,7 @@ cases[0].resources = [{
         "resourceType": "Condition",
         "status": "confirmed",
         "subject": na,
-        "onsetDate": "2012-08-05",
+        "onsetDateTime": "2012-08-05",
         "dateAsserted": "2012-08-05",
         "abatementBoolean": true,
         "code": {
@@ -55,7 +55,7 @@ cases[1].resources = [{
         "resourceType": "Condition",
         "status": "confirmed",
         "subject": na,
-        "onsetDate": "2007-01-03",
+        "onsetDateTime": "2007-01-03",
         "dateAsserted": "2007-01-03",
         "code": {
             "coding": [{
@@ -94,7 +94,7 @@ cases[2].resources = [{
         "resourceType": "Condition",
         "status": "confirmed",
         "subject": na,
-        "onsetDate": "2007-01-03",
+        "onsetDateTime": "2007-01-03",
         "dateAsserted": "2007-01-03",
         "abatementDate": "2012-09-05",
         "code": {

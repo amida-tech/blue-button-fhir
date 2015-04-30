@@ -28,14 +28,6 @@ cases[0].resources = [{
         "status": "final",
         "reliability": "ok",
         "subject": na,
-        "extension": [{
-            "url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
-            "valueCoding": {
-                "code": "8716-3",
-                "display": "Vital signs",
-                "system": "http://loinc.org"
-            }
-        }],
         "interpretation": {
             "coding": [{
                 "system": "http://hl7.org/fhir/v2/0078",
@@ -92,14 +84,6 @@ cases[1].resources = [{
         "status": "final",
         "reliability": "ok",
         "subject": na,
-        "extension": [{
-            "url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
-            "valueCoding": {
-                "code": "8716-3",
-                "display": "Vital signs",
-                "system": "http://loinc.org"
-            }
-        }],
         "interpretation": {
             "coding": [{
                 "system": "http://hl7.org/fhir/v2/0078",
@@ -156,14 +140,6 @@ cases[2].resources = [{
         "status": "final",
         "reliability": "ok",
         "subject": na,
-        "extension": [{
-            "url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
-            "valueCoding": {
-                "code": "8716-3",
-                "display": "Vital signs",
-                "system": "http://loinc.org"
-            }
-        }],
         "interpretation": {
             "coding": [{
                 "system": "http://hl7.org/fhir/v2/0078",
@@ -220,14 +196,6 @@ cases[3].resources = [{
         "status": "final",
         "reliability": "ok",
         "subject": na,
-        "extension": [{
-            "url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
-            "valueCoding": {
-                "code": "8716-3",
-                "display": "Vital signs",
-                "system": "http://loinc.org"
-            }
-        }],
         "interpretation": {
             "coding": [{
                 "system": "http://hl7.org/fhir/v2/0078",
@@ -284,14 +252,6 @@ cases[4].resources = [{
         "status": "final",
         "reliability": "ok",
         "subject": na,
-        "extension": [{
-            "url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
-            "valueCoding": {
-                "code": "8716-3",
-                "display": "Vital signs",
-                "system": "http://loinc.org"
-            }
-        }],
         "interpretation": {
             "coding": [{
                 "system": "http://hl7.org/fhir/v2/0078",
@@ -348,14 +308,6 @@ cases[5].resources = [{
         "status": "final",
         "reliability": "ok",
         "subject": na,
-        "extension": [{
-            "url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
-            "valueCoding": {
-                "code": "8716-3",
-                "display": "Vital signs",
-                "system": "http://loinc.org"
-            }
-        }],
         "interpretation": {
             "coding": [{
                 "system": "http://hl7.org/fhir/v2/0078",
@@ -412,14 +364,6 @@ cases[6].resources = [{
         "status": "final",
         "reliability": "ok",
         "subject": na,
-        "extension": [{
-            "url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
-            "valueCoding": {
-                "code": "8716-3",
-                "display": "Vital signs",
-                "system": "http://loinc.org"
-            }
-        }],
         "interpretation": {
             "coding": [{
                 "system": "http://hl7.org/fhir/v2/0078",
@@ -475,18 +419,7 @@ cases[7].resources = [{
         "issued": "2014-05-15",
         "status": "final",
         "reliability": "ok",
-        "extension": [{
-            "url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
-            "valueCoding": {
-                "code": "8716-3",
-                "display": "Vital signs",
-                "system": "http://loinc.org"
-            }
-        }],
-        "subject": {
-            "reference": "Patient/add70d80-2f87-11e4-a02b-699a62c7658f",
-            "display": "PAC-PATRU TESTPATRU X"
-        }
+        "subject": na
     }
 }];
 

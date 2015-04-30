@@ -28,14 +28,6 @@ cases[0].resources = [{
         "status": "final",
         "reliability": "ok",
         "subject": na,
-        "extension": [{
-            "url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
-            "valueCoding": {
-                "code": "11502-2",
-                "display": "Laboratory report",
-                "system": "http://loinc.org"
-            }
-        }],
         "interpretation": {
             "coding": [{
                 "system": "http://hl7.org/fhir/v2/0078",
@@ -78,14 +70,6 @@ cases[0].resources = [{
         "status": "final",
         "reliability": "ok",
         "subject": na,
-        "extension": [{
-            "url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
-            "valueCoding": {
-                "code": "11502-2",
-                "display": "Laboratory report",
-                "system": "http://loinc.org"
-            }
-        }],
         "interpretation": {
             "coding": [{
                 "system": "http://hl7.org/fhir/v2/0078",
@@ -139,14 +123,6 @@ cases[0].resources = [{
         "status": "final",
         "reliability": "ok",
         "subject": na,
-        "extension": [{
-            "url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
-            "valueCoding": {
-                "code": "11502-2",
-                "display": "Laboratory report",
-                "system": "http://loinc.org"
-            }
-        }],
         "interpretation": {
             "coding": [{
                 "system": "http://hl7.org/fhir/v2/0078",
@@ -207,14 +183,6 @@ cases[0].resources = [{
             "id": "has-component",
             "target": {
                 "reference": "Observation/or-0-2"
-            }
-        }],
-        "extension": [{
-            "url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
-            "valueCoding": {
-                "code": "11502-2",
-                "display": "Laboratory report",
-                "system": "http://loinc.org"
             }
         }]
     }
@@ -318,14 +286,6 @@ cases[1].resources = [{
         "issued": "2013-05-30T21:25:23.000Z",
         "status": "final",
         "reliability": "ok",
-        "extension": [{
-            "url": "http://amida.com/fhir/Profile/extensions#observation-type",
-            "valueCoding": {
-                "code": "11502-2",
-                "display": "Laboratory report",
-                "system": "http://loinc.org"
-            }
-        }],
         "interpretation": {
             "coding": [{
                 "system": "http://hl7.org/fhir/v2/0078",
@@ -353,14 +313,6 @@ cases[1].resources = [{
             "type": "has-component",
             "target": {
                 "reference": "Observation/or-1-0"
-            }
-        }],
-        "extension": [{
-            "url": "http://amida.com/fhir/Profile/extensions#observation-type",
-            "valueCoding": {
-                "code": "11502-2",
-                "display": "Laboratory report",
-                "system": "http://loinc.org"
             }
         }]
     }

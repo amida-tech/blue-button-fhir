@@ -10,7 +10,7 @@ cases[0].resources = [{
     "resource": {
         "id": "Observation/ors-0-0",
         "resourceType": "Observation",
-        "name": {
+        "code": {
             "coding": [{
                 "system": "http://loinc.org",
                 "code": "15218-1",

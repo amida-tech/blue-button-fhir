@@ -10,7 +10,7 @@ cases[0].resources = [{
     "resource": {
         "id": "Observation/or-0-0",
         "resourceType": "Observation",
-        "name": {
+        "code": {
             "coding": [{
                 "system": "http://loinc.org",
                 "code": "30313-1",
@@ -60,7 +60,7 @@ cases[0].resources = [{
     "resource": {
         "id": "Observation/or-0-1",
         "resourceType": "Observation",
-        "name": {
+        "code": {
             "coding": [{
                 "system": "http://loinc.org",
                 "code": "33765-9",
@@ -121,7 +121,7 @@ cases[0].resources = [{
     "resource": {
         "id": "Observation/or-0-2",
         "resourceType": "Observation",
-        "name": {
+        "code": {
             "coding": [{
                 "system": "http://loinc.org",
                 "code": "26515-7",
@@ -182,7 +182,7 @@ cases[0].resources = [{
     "resource": {
         "id": "Observation/or-0-3",
         "resourceType": "Observation",
-        "name": {
+        "code": {
             "coding": [{
                 "system": "http://snomed.info/sct",
                 "code": "43789009",
@@ -304,7 +304,7 @@ cases[1].resources = [{
     "resource": {
         "id": "Observation/or-1-0",
         "resourceType": "Observation",
-        "name": {
+        "code": {
             "coding": [{
                 "system": "http://loinc.org",
                 "code": "26515-7",
@@ -339,7 +339,7 @@ cases[1].resources = [{
     "resource": {
         "id": "Observation/or-1-1",
         "resourceType": "Observation",
-        "name": {
+        "code": {
             "coding": [{
                 "system": "urn:oid:2.16.840.1.113883.6.12",
                 "code": "85049",

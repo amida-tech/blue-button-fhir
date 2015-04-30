@@ -8,57 +8,33 @@ cases[0] = {};
 
 cases[0].resources = [{
     "resource": {
-        "id": "AdverseReaction/a-0-0",
-        "resourceType": "AdverseReaction",
+        "id": "AllergyIntolerance/a-0-1",
+        "resourceType": "AllergyIntolerance",
+        "criticality": "medium",
+        "recordedDate": "2006-05-01",
+        "status": "confirmed",
         "subject": na,
-        "symptom": [{
+        "substance": {
+            "coding": [{
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "2670",
+                "display": "Codeine"
+            }]
+        },
+        "event": [{
             "severity": "minor",
-            "code": {
+            "manifestation": [{
                 "coding": [{
                     "code": "267036007",
                     "system": "http://snomed.info/sct",
                     "display": "Shortness of Breath"
                 }],
-                "text": na
-            }
-        }],
-        "didNotOccurFlag": false
-    }
-}, {
-    "resource": {
-        "id": "AllergyIntolerance/a-0-1",
-        "resourceType": "AllergyIntolerance",
-        "criticality": "medium",
-        "sensitivityType": "allergy",
-        "recordedDate": "2006-05-01",
-        "status": "confirmed",
-        "subject": na,
-        "substance": {
-            "reference": "Substance/a-0-2",
-            "display": na
-        },
-        "reaction": [{
-            "reference": "AdverseReaction/a-0-0",
-            "display": na
+            }]
         }]
-    }
-}, {
-    "resource": {
-        "id": "Substance/a-0-2",
-        "resourceType": "Substance",
-        "text": na,
-        "type": {
-            "coding": [{
-                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-                "code": "2670",
-                "display": "Codeine"
-            }],
-            "text": na
-        }
     }
 }];
 
-cases[0].input = cases[0].resources[1];
+cases[0].input = cases[0].resources[0];
 
 cases[0].result = {
     "date_time": {
@@ -106,55 +82,33 @@ cases[1] = {};
 
 cases[1].resources = [{
     "resource": {
-        "id": "AdverseReaction/a-1-0",
-        "resourceType": "AdverseReaction",
-        "subject": na,
-        "symptom": [{
-            "severity": "minor",
-            "code": {
-                "coding": [{
-                    "code": "267036007",
-                    "system": "http://snomed.info/sct",
-                    "display": "Shortness of Breath"
-                }],
-                "text": "Shortness of Breath"
-            }
-        }],
-        "didNotOccurFlag": false
-    }
-}, {
-    "resource": {
         "id": "AllergyIntolerance/a-1-1",
         "resourceType": "AllergyIntolerance",
         "criticality": "medium",
-        "sensitivityType": "allergy",
         "recordedDate": "2006-05-01",
         "status": "confirmed",
         "subject": na,
         "substance": {
-            "reference": "#allergen",
-            "display": "Codeine"
+            "coding": [{
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "DUMMY_CODE",
+                "display": "Codeine"
+            }]
         },
-        "contained": [{
-            "resourceType": "Substance",
-            "id": "allergen",
-            "type": {
+        "event": [{
+            "severity": "minor",
+            "manifestation": [{
                 "coding": [{
-                    "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-                    "code": "DUMMY_CODE",
-                    "display": "Codeine"
-                }],
-                "text": "Codeine"
-            }
-        }],
-        "reaction": [{
-            "reference": "AdverseReaction/a-1-0",
-            "display": "Shortness of Breath"
+                    "code": "267036007",
+                    "system": "http://snomed.info/sct",
+                    "display": "Shortness of Breath"
+                }]
+            }]
         }]
     }
 }];
 
-cases[1].input = cases[1].resources[1];
+cases[1].input = cases[1].resources[0];
 
 cases[1].result = {
     "date_time": {

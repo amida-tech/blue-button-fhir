@@ -10,7 +10,7 @@ cases[0].resources = [{
     "resource": {
         "id": "Observation/ors-0-0",
         "resourceType": "Observation",
-        "name": {
+        "code": {
             "coding": [{
                 "system": "http://loinc.org",
                 "code": "15218-1",
@@ -23,14 +23,6 @@ cases[0].resources = [{
         "status": "final",
         "reliability": "ok",
         "subject": na,
-        "extension": [{
-            "url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
-            "valueCoding": {
-                "code": "11502-2",
-                "display": "Laboratory report",
-                "system": "http://loinc.org"
-            }
-        }],
         "interpretation": {
             "coding": [{
                 "system": "http://hl7.org/fhir/v2/0078",

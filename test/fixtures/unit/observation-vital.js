@@ -10,7 +10,7 @@ cases[0].resources = [{
     "resource": {
         "id": "Observation/ov-0-0",
         "resourceType": "Observation",
-        "name": {
+        "code": {
             "coding": [{
                 "system": "http://loinc.org",
                 "code": "8302-2",
@@ -28,14 +28,6 @@ cases[0].resources = [{
         "status": "final",
         "reliability": "ok",
         "subject": na,
-        "extension": [{
-            "url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
-            "valueCoding": {
-                "code": "8716-3",
-                "display": "Vital signs",
-                "system": "http://loinc.org"
-            }
-        }],
         "interpretation": {
             "coding": [{
                 "system": "http://hl7.org/fhir/v2/0078",
@@ -74,7 +66,7 @@ cases[1].resources = [{
     "resource": {
         "id": "Observation/ov-1-0",
         "resourceType": "Observation",
-        "name": {
+        "code": {
             "coding": [{
                 "system": "http://loinc.org",
                 "code": "3141-9",
@@ -92,14 +84,6 @@ cases[1].resources = [{
         "status": "final",
         "reliability": "ok",
         "subject": na,
-        "extension": [{
-            "url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
-            "valueCoding": {
-                "code": "8716-3",
-                "display": "Vital signs",
-                "system": "http://loinc.org"
-            }
-        }],
         "interpretation": {
             "coding": [{
                 "system": "http://hl7.org/fhir/v2/0078",
@@ -138,7 +122,7 @@ cases[2].resources = [{
     "resource": {
         "id": "Observation/ov-2-0",
         "resourceType": "Observation",
-        "name": {
+        "code": {
             "coding": [{
                 "system": "http://loinc.org",
                 "code": "39156-5",
@@ -156,14 +140,6 @@ cases[2].resources = [{
         "status": "final",
         "reliability": "ok",
         "subject": na,
-        "extension": [{
-            "url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
-            "valueCoding": {
-                "code": "8716-3",
-                "display": "Vital signs",
-                "system": "http://loinc.org"
-            }
-        }],
         "interpretation": {
             "coding": [{
                 "system": "http://hl7.org/fhir/v2/0078",
@@ -202,7 +178,7 @@ cases[3].resources = [{
     "resource": {
         "id": "Observation/ov-3-0",
         "resourceType": "Observation",
-        "name": {
+        "code": {
             "coding": [{
                 "system": "http://loinc.org",
                 "code": "8480-6",
@@ -220,14 +196,6 @@ cases[3].resources = [{
         "status": "final",
         "reliability": "ok",
         "subject": na,
-        "extension": [{
-            "url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
-            "valueCoding": {
-                "code": "8716-3",
-                "display": "Vital signs",
-                "system": "http://loinc.org"
-            }
-        }],
         "interpretation": {
             "coding": [{
                 "system": "http://hl7.org/fhir/v2/0078",
@@ -266,7 +234,7 @@ cases[4].resources = [{
     "resource": {
         "id": "Observation/ov-4-0",
         "resourceType": "Observation",
-        "name": {
+        "code": {
             "coding": [{
                 "system": "http://loinc.org",
                 "code": "8480-6",
@@ -284,14 +252,6 @@ cases[4].resources = [{
         "status": "final",
         "reliability": "ok",
         "subject": na,
-        "extension": [{
-            "url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
-            "valueCoding": {
-                "code": "8716-3",
-                "display": "Vital signs",
-                "system": "http://loinc.org"
-            }
-        }],
         "interpretation": {
             "coding": [{
                 "system": "http://hl7.org/fhir/v2/0078",
@@ -330,7 +290,7 @@ cases[5].resources = [{
     "resource": {
         "id": "Observation/ov-5-0",
         "resourceType": "Observation",
-        "name": {
+        "code": {
             "coding": [{
                 "system": "http://loinc.org",
                 "code": "8462-4",
@@ -348,14 +308,6 @@ cases[5].resources = [{
         "status": "final",
         "reliability": "ok",
         "subject": na,
-        "extension": [{
-            "url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
-            "valueCoding": {
-                "code": "8716-3",
-                "display": "Vital signs",
-                "system": "http://loinc.org"
-            }
-        }],
         "interpretation": {
             "coding": [{
                 "system": "http://hl7.org/fhir/v2/0078",
@@ -394,7 +346,7 @@ cases[6].resources = [{
     "resource": {
         "id": "Observation/ov-6-0",
         "resourceType": "Observation",
-        "name": {
+        "code": {
             "coding": [{
                 "system": "http://loinc.org",
                 "code": "8462-4",
@@ -412,14 +364,6 @@ cases[6].resources = [{
         "status": "final",
         "reliability": "ok",
         "subject": na,
-        "extension": [{
-            "url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
-            "valueCoding": {
-                "code": "8716-3",
-                "display": "Vital signs",
-                "system": "http://loinc.org"
-            }
-        }],
         "interpretation": {
             "coding": [{
                 "system": "http://hl7.org/fhir/v2/0078",
@@ -458,7 +402,7 @@ cases[7].resources = [{
     "resource": {
         "id": "Observation/0",
         "resourceType": "Observation",
-        "name": {
+        "code": {
             "coding": [{
                 "system": "http://loinc.org",
                 "code": "8284-2",
@@ -475,18 +419,7 @@ cases[7].resources = [{
         "issued": "2014-05-15",
         "status": "final",
         "reliability": "ok",
-        "extension": [{
-            "url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
-            "valueCoding": {
-                "code": "8716-3",
-                "display": "Vital signs",
-                "system": "http://loinc.org"
-            }
-        }],
-        "subject": {
-            "reference": "Patient/add70d80-2f87-11e4-a02b-699a62c7658f",
-            "display": "PAC-PATRU TESTPATRU X"
-        }
+        "subject": na
     }
 }];
 

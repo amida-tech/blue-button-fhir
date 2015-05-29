@@ -28,7 +28,7 @@ cases[0].resources = [{
                 "code": "mg/actuat",
                 "system": "http://unitsofmeasure.org"
             },
-            "timingSchedule": {
+            "scheduledTiming": {
                 "event": [{
                     "start": "2012-08-06"
                 }],

@@ -28,7 +28,7 @@ cases[0].resources = [{
                 "code": "mg/actuat",
                 "system": "http://unitsofmeasure.org"
             },
-            "timingSchedule": {
+            "scheduledTiming": {
                 "event": [{
                     "start": "2012-08-06"
                 }],
@@ -146,7 +146,7 @@ cases[1].resources = [{
         "patient": na,
         "dateWritten": "2014-10-03T03:59:00.000Z",
         "dosageInstruction": [{
-            "timingDateTime": "2014-10-03T03:59:00.000Z"
+            "scheduledDateTime": "2014-10-03T03:59:00.000Z"
         }],
         "contained": [{
             "resourceType": "Medication",
@@ -197,7 +197,7 @@ cases[2].resources = [{
         "patient": na,
         "dateWritten": "2012-08-06",
         "dosageInstruction": [{
-            "timingSchedule": {
+            "scheduledTiming": {
                 "event": [{
                     "start": "2012-08-06"
                 }],
@@ -267,7 +267,7 @@ cases[3].resources = [{
         "patient": na,
         "dateWritten": "2012-08-06",
         "dosageInstruction": [{
-            "timingPeriod": {
+            "scheduledPeriod": {
                 "start": "2012-08-06",
                 "end": "2012-08-30"
             }

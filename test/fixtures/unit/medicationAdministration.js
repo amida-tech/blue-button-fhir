@@ -76,15 +76,11 @@ cases[0].resources = [{
         "resourceType": "MedicationAdministration",
         "status": "completed",
         "patient": na,
-        "practitioner": {
-            "reference": "Practitioner/unknown",
-            "display": "Unknown"
-        },
-        "whenGiven": {
+        "effectiveTimePeriod": {
             "start": "2012-08-06",
             "end": "2012-08-13"
         },
-        "dosage": [{
+        "dosage": {
             "route": {
                 "coding": [{
                     "code": "C38216",
@@ -111,7 +107,7 @@ cases[0].resources = [{
                 }],
                 "text": na
             }
-        }],
+        },
         "prescription": {
             "reference": "MedicationPrescription/ma-0-0",
             "display": "Albuterol 0.09 MG/ACTUAT inhalant solution"

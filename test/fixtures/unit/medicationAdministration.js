@@ -94,18 +94,6 @@ cases[0].resources = [{
                 "units": "mg/actuat",
                 "code": "mg/actuat",
                 "system": "http://unitsofmeasure.org"
-            },
-            "timingPeriod": {
-                "start": "2012-08-06",
-                "end": "2012-08-13"
-            },
-            "asNeededCodeableConcept": {
-                "coding": [{
-                    "system": "http://snomed.info/sct",
-                    "code": "56018004",
-                    "display": "Wheezing"
-                }],
-                "text": na
             }
         },
         "prescription": {

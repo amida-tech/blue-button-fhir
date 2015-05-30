@@ -35,8 +35,10 @@ cases[0].resources = [{
                 "repeat": {
                     "frequency": 1,
                     "duration": 12,
-                    "units": "h",
-                    "end": "2012-08-13"
+                    "durationUnits": "h",
+                    "bounds": {
+                        "end": "2012-08-13"
+                    }
                 }
             },
             "asNeededCodeableConcept": {
@@ -203,9 +205,11 @@ cases[2].resources = [{
                 }],
                 "repeat": {
                     "when": "HS",
-                    "end": "2012-08-30",
+                    "bounds": {
+                        "end": "2012-08-30",
+                    },
                     "duration": 1,
-                    "units": "s"
+                    "durationUnits": "s"
                 }
             }
         }],

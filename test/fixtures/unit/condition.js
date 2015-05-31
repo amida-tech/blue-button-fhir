@@ -2,8 +2,6 @@
 
 var cases = module.exports = [];
 
-var na = null;
-
 cases[0] = {};
 
 cases[0].resources = [{
@@ -11,7 +9,6 @@ cases[0].resources = [{
         "id": "Condition/c-0-0",
         "resourceType": "Condition",
         "status": "confirmed",
-        "subject": na,
         "onsetDateTime": "2012-08-05",
         "dateAsserted": "2012-08-05",
         "abatementBoolean": true,
@@ -20,8 +17,7 @@ cases[0].resources = [{
                 "code": "233604007",
                 "system": "http://snomed.info/sct",
                 "display": "Pneumonia"
-            }],
-            "text": na
+            }]
         }
     }
 }];
@@ -54,7 +50,6 @@ cases[1].resources = [{
         "id": "Condition/c-1-0",
         "resourceType": "Condition",
         "status": "confirmed",
-        "subject": na,
         "onsetDateTime": "2007-01-03",
         "dateAsserted": "2007-01-03",
         "code": {
@@ -62,8 +57,7 @@ cases[1].resources = [{
                 "code": "195967001",
                 "system": "http://snomed.info/sct",
                 "display": "Asthma"
-            }],
-            "text": na
+            }]
         }
     }
 }];
@@ -93,7 +87,6 @@ cases[2].resources = [{
         "id": "Condition/c-2-0",
         "resourceType": "Condition",
         "status": "confirmed",
-        "subject": na,
         "onsetDateTime": "2007-01-03",
         "dateAsserted": "2007-01-03",
         "abatementDate": "2012-09-05",
@@ -102,8 +95,7 @@ cases[2].resources = [{
                 "code": "195967001",
                 "system": "http://snomed.info/sct",
                 "display": "Asthma"
-            }],
-            "text": na
+            }]
         }
     }
 }];

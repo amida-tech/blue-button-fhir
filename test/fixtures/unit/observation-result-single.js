@@ -2,8 +2,6 @@
 
 var cases = module.exports = [];
 
-var na = null;
-
 cases[0] = {};
 
 cases[0].resources = [{
@@ -22,7 +20,6 @@ cases[0].resources = [{
         "issued": "2012-08-10",
         "status": "final",
         "reliability": "ok",
-        "subject": na,
         "interpretation": {
             "coding": [{
                 "system": "http://hl7.org/fhir/v2/0078",

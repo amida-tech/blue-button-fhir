@@ -2,8 +2,6 @@
 
 var cases = module.exports = [];
 
-var na = null;
-
 cases[0] = {};
 
 cases[0].resources = [{
@@ -27,7 +25,6 @@ cases[0].resources = [{
         "issued": "2014-05-15",
         "status": "final",
         "reliability": "ok",
-        "subject": na,
         "interpretation": {
             "coding": [{
                 "system": "http://hl7.org/fhir/v2/0078",
@@ -83,7 +80,6 @@ cases[1].resources = [{
         "issued": "2014-05-15",
         "status": "final",
         "reliability": "ok",
-        "subject": na,
         "interpretation": {
             "coding": [{
                 "system": "http://hl7.org/fhir/v2/0078",
@@ -139,7 +135,6 @@ cases[2].resources = [{
         "issued": "2014-05-15",
         "status": "final",
         "reliability": "ok",
-        "subject": na,
         "interpretation": {
             "coding": [{
                 "system": "http://hl7.org/fhir/v2/0078",
@@ -195,7 +190,6 @@ cases[3].resources = [{
         "issued": "2014-05-15",
         "status": "final",
         "reliability": "ok",
-        "subject": na,
         "interpretation": {
             "coding": [{
                 "system": "http://hl7.org/fhir/v2/0078",
@@ -251,7 +245,6 @@ cases[4].resources = [{
         "issued": "2014-06-16",
         "status": "final",
         "reliability": "ok",
-        "subject": na,
         "interpretation": {
             "coding": [{
                 "system": "http://hl7.org/fhir/v2/0078",
@@ -307,7 +300,6 @@ cases[5].resources = [{
         "issued": "2014-06-16",
         "status": "final",
         "reliability": "ok",
-        "subject": na,
         "interpretation": {
             "coding": [{
                 "system": "http://hl7.org/fhir/v2/0078",
@@ -363,7 +355,6 @@ cases[6].resources = [{
         "issued": "2014-05-15",
         "status": "final",
         "reliability": "ok",
-        "subject": na,
         "interpretation": {
             "coding": [{
                 "system": "http://hl7.org/fhir/v2/0078",
@@ -418,8 +409,7 @@ cases[7].resources = [{
         },
         "issued": "2014-05-15",
         "status": "final",
-        "reliability": "ok",
-        "subject": na
+        "reliability": "ok"
     }
 }];
 

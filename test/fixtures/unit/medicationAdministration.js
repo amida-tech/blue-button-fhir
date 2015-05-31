@@ -2,8 +2,6 @@
 
 var cases = module.exports = [];
 
-var na = null;
-
 cases[0] = {};
 
 cases[0].resources = [{
@@ -11,7 +9,6 @@ cases[0].resources = [{
         "id": "MedicationPrescription/ma-0-0",
         "resourceType": "MedicationPrescription",
         "status": "active",
-        "patient": na,
         "dateWritten": "2012-08-06",
         "dosageInstruction": [{
             "route": {
@@ -46,8 +43,7 @@ cases[0].resources = [{
                     "system": "http://snomed.info/sct",
                     "code": "56018004",
                     "display": "Wheezing"
-                }],
-                "text": na
+                }]
             }
         }],
         "text": {
@@ -63,8 +59,7 @@ cases[0].resources = [{
                     "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
                     "code": "573621",
                     "display": "Albuterol 0.09 MG/ACTUAT inhalant solution"
-                }],
-                "text": na
+                }]
             }
         }],
         "medication": {
@@ -77,7 +72,6 @@ cases[0].resources = [{
         "id": "MedicationAdministration/ma-0-1",
         "resourceType": "MedicationAdministration",
         "status": "completed",
-        "patient": na,
         "effectiveTimePeriod": {
             "start": "2012-08-06",
             "end": "2012-08-13"
@@ -115,8 +109,7 @@ cases[0].resources = [{
                     "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
                     "code": "573621",
                     "display": "Albuterol 0.09 MG/ACTUAT inhalant solution"
-                }],
-                "text": na
+                }]
             }
         }]
     }

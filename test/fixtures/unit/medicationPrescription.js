@@ -2,8 +2,6 @@
 
 var cases = module.exports = [];
 
-var na = null;
-
 cases[0] = {};
 
 cases[0].resources = [{
@@ -11,7 +9,6 @@ cases[0].resources = [{
         "id": "MedicationPrescription/mp-0-0",
         "resourceType": "MedicationPrescription",
         "status": "completed",
-        "patient": na,
         "dateWritten": "2012-08-06",
         "dosageInstruction": [{
             "route": {
@@ -145,7 +142,6 @@ cases[1].resources = [{
         "id": "MedicationPrescription/mp-1-0",
         "resourceType": "MedicationPrescription",
         "status": "active",
-        "patient": na,
         "dateWritten": "2014-10-03T03:59:00.000Z",
         "dosageInstruction": [{
             "scheduledDateTime": "2014-10-03T03:59:00.000Z"
@@ -196,7 +192,6 @@ cases[2].resources = [{
         "id": "MedicationPrescription/mp-2-0",
         "resourceType": "MedicationPrescription",
         "status": "completed",
-        "patient": na,
         "dateWritten": "2012-08-06",
         "dosageInstruction": [{
             "scheduledTiming": {
@@ -268,7 +263,6 @@ cases[3].resources = [{
         "id": "MedicationPrescription/mp-3-0",
         "resourceType": "MedicationPrescription",
         "status": "active",
-        "patient": na,
         "dateWritten": "2012-08-06",
         "dosageInstruction": [{
             "scheduledPeriod": {

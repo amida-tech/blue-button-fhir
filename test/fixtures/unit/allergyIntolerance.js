@@ -2,8 +2,6 @@
 
 var cases = module.exports = [];
 
-var na = null;
-
 cases[0] = {};
 
 cases[0].resources = [{
@@ -13,7 +11,6 @@ cases[0].resources = [{
         "criticality": "medium",
         "recordedDate": "2006-05-01",
         "status": "confirmed",
-        "subject": na,
         "substance": {
             "coding": [{
                 "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
@@ -87,7 +84,6 @@ cases[1].resources = [{
         "criticality": "medium",
         "recordedDate": "2006-05-01",
         "status": "confirmed",
-        "subject": na,
         "substance": {
             "coding": [{
                 "system": "http://www.nlm.nih.gov/research/umls/rxnorm",

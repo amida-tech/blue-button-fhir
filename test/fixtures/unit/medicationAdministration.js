@@ -2,8 +2,6 @@
 
 var cases = module.exports = [];
 
-var na = null;
-
 cases[0] = {};
 
 cases[0].resources = [{
@@ -11,7 +9,6 @@ cases[0].resources = [{
         "id": "MedicationPrescription/ma-0-0",
         "resourceType": "MedicationPrescription",
         "status": "active",
-        "patient": na,
         "dateWritten": "2012-08-06",
         "dosageInstruction": [{
             "route": {
@@ -28,15 +25,17 @@ cases[0].resources = [{
                 "code": "mg/actuat",
                 "system": "http://unitsofmeasure.org"
             },
-            "timingSchedule": {
+            "scheduledTiming": {
                 "event": [{
                     "start": "2012-08-06"
                 }],
                 "repeat": {
                     "frequency": 1,
                     "duration": 12,
-                    "units": "h",
-                    "end": "2012-08-13"
+                    "durationUnits": "h",
+                    "bounds": {
+                        "end": "2012-08-13"
+                    }
                 }
             },
             "asNeededCodeableConcept": {
@@ -44,8 +43,7 @@ cases[0].resources = [{
                     "system": "http://snomed.info/sct",
                     "code": "56018004",
                     "display": "Wheezing"
-                }],
-                "text": na
+                }]
             }
         }],
         "text": {
@@ -61,8 +59,7 @@ cases[0].resources = [{
                     "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
                     "code": "573621",
                     "display": "Albuterol 0.09 MG/ACTUAT inhalant solution"
-                }],
-                "text": na
+                }]
             }
         }],
         "medication": {
@@ -75,16 +72,11 @@ cases[0].resources = [{
         "id": "MedicationAdministration/ma-0-1",
         "resourceType": "MedicationAdministration",
         "status": "completed",
-        "patient": na,
-        "practitioner": {
-            "reference": "Practitioner/unknown",
-            "display": "Unknown"
-        },
-        "whenGiven": {
+        "effectiveTimePeriod": {
             "start": "2012-08-06",
             "end": "2012-08-13"
         },
-        "dosage": [{
+        "dosage": {
             "route": {
                 "coding": [{
                     "code": "C38216",
@@ -98,20 +90,8 @@ cases[0].resources = [{
                 "units": "mg/actuat",
                 "code": "mg/actuat",
                 "system": "http://unitsofmeasure.org"
-            },
-            "timingPeriod": {
-                "start": "2012-08-06",
-                "end": "2012-08-13"
-            },
-            "asNeededCodeableConcept": {
-                "coding": [{
-                    "system": "http://snomed.info/sct",
-                    "code": "56018004",
-                    "display": "Wheezing"
-                }],
-                "text": na
             }
-        }],
+        },
         "prescription": {
             "reference": "MedicationPrescription/ma-0-0",
             "display": "Albuterol 0.09 MG/ACTUAT inhalant solution"
@@ -129,8 +109,7 @@ cases[0].resources = [{
                     "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
                     "code": "573621",
                     "display": "Albuterol 0.09 MG/ACTUAT inhalant solution"
-                }],
-                "text": na
+                }]
             }
         }]
     }

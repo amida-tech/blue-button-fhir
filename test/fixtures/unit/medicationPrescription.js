@@ -2,8 +2,6 @@
 
 var cases = module.exports = [];
 
-var na = null;
-
 cases[0] = {};
 
 cases[0].resources = [{
@@ -11,7 +9,6 @@ cases[0].resources = [{
         "id": "MedicationPrescription/mp-0-0",
         "resourceType": "MedicationPrescription",
         "status": "completed",
-        "patient": na,
         "dateWritten": "2012-08-06",
         "dosageInstruction": [{
             "route": {
@@ -28,15 +25,17 @@ cases[0].resources = [{
                 "code": "mg/actuat",
                 "system": "http://unitsofmeasure.org"
             },
-            "timingSchedule": {
+            "scheduledTiming": {
                 "event": [{
                     "start": "2012-08-06"
                 }],
                 "repeat": {
                     "frequency": 1,
                     "duration": 12,
-                    "units": "h",
-                    "end": "2012-08-13"
+                    "durationUnits": "h",
+                    "bounds": {
+                        "end": "2012-08-13"
+                    }
                 }
             },
             "asNeededCodeableConcept": {
@@ -143,10 +142,9 @@ cases[1].resources = [{
         "id": "MedicationPrescription/mp-1-0",
         "resourceType": "MedicationPrescription",
         "status": "active",
-        "patient": na,
         "dateWritten": "2014-10-03T03:59:00.000Z",
         "dosageInstruction": [{
-            "timingDateTime": "2014-10-03T03:59:00.000Z"
+            "scheduledDateTime": "2014-10-03T03:59:00.000Z"
         }],
         "contained": [{
             "resourceType": "Medication",
@@ -194,18 +192,19 @@ cases[2].resources = [{
         "id": "MedicationPrescription/mp-2-0",
         "resourceType": "MedicationPrescription",
         "status": "completed",
-        "patient": na,
         "dateWritten": "2012-08-06",
         "dosageInstruction": [{
-            "timingSchedule": {
+            "scheduledTiming": {
                 "event": [{
                     "start": "2012-08-06"
                 }],
                 "repeat": {
                     "when": "HS",
-                    "end": "2012-08-30",
+                    "bounds": {
+                        "end": "2012-08-30",
+                    },
                     "duration": 1,
-                    "units": "s"
+                    "durationUnits": "s"
                 }
             }
         }],
@@ -264,10 +263,9 @@ cases[3].resources = [{
         "id": "MedicationPrescription/mp-3-0",
         "resourceType": "MedicationPrescription",
         "status": "active",
-        "patient": na,
         "dateWritten": "2012-08-06",
         "dosageInstruction": [{
-            "timingPeriod": {
+            "scheduledPeriod": {
                 "start": "2012-08-06",
                 "end": "2012-08-30"
             }

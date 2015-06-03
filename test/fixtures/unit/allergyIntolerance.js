@@ -147,3 +147,59 @@ cases[1].result = {
         }
     }
 };
+
+cases[2] = {};
+
+cases[2].resources = [{
+    "resource": {
+        "id": "AllergyIntolerance/a-2-1",
+        "resourceType": "AllergyIntolerance",
+        "recordedDate": "2014-08-06",
+        "status": "confirmed",
+        "substance": {
+            "text": "Bactrim"
+        },
+        "event": [{
+            "manifestation": [{
+                "coding": [{
+                    "system": "http://snomed.info/sct",
+                    "code": "112625008",
+                    "display": "Rash"
+                }],
+                "text": "Rash"
+            }]
+        }],
+        "patient": {
+            "reference": "Patient/0",
+            "display": "Jones, Isabella"
+        }
+    }
+}];
+
+cases[2].input = cases[2].resources[0];
+
+cases[2].result = {
+    "observation": {
+        "status": {
+            "name": "Active",
+            "code": "55561003",
+            "code_system_name": "SNOMED CT"
+        },
+        "allergen": {
+            "name": "Bactrim"
+        },
+        "reactions": [{
+            "reaction": {
+                "name": "Rash",
+                "code": "112625008",
+                "code_system_name": "SNOMED CT"
+            }
+        }]
+    },
+    "date_time": {
+        "low": {
+            "date": "2014-08-06T00:00:00.000Z",
+            "precision": "day"
+        }
+    }
+};

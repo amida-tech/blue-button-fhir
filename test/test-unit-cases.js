@@ -39,6 +39,7 @@ describe('allergyIntolerance resource unit', testDescription('allergyIntolerance
 describe('condition resource unit', testDescription('condition'));
 describe('medicationAdministration resource unit', testDescription('medicationAdministration'));
 describe('medicationPrescription resource unit', testDescription('medicationPrescription'));
+//describe('medicationStatement resource unit', testDescription('medicationStatement'));
 describe('observation-result-single resource unit', testDescription('observation-result-single'));
 describe('observation-result resource unit', testDescription('observation-result'));
 describe('observation-vital resource unit', testDescription('observation-vital'));

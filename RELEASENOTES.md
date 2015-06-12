@@ -2,6 +2,8 @@
 
 - Patient resource is now translated to blue-button-model.
 - Only DTSU2 bundles are accepted.  Other bundles will need to be externally shimmed
+- Various DTSU2 fixes
+- MedicationStatement is now supported
 
 # v1.4.1 - March 8, 2015
 

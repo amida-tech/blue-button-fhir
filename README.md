@@ -19,7 +19,8 @@ Currently the following resources are supported in Bundles
 * Medication Administration
  * Medication and Medication Prescription resources that are externally referenced from any Medication Administration resource are assumed to be in the Bundle. 
 * Medication Prescription
- * Medication resources that are externally referenced from any Medication Prescription resource are assumed to be in the Bundle. 
+ * Medication resources that are externally referenced from any Medication Prescription resource are assumed to be in the Bundle.
+* Medication Statement 
 * Observation
  * Observation resources are assumed to have an `extension.valueCoding` field that defines the LOINC description of the type of the resource. Vitals (code - 8716-3) and Results (code - 11502-2) are supported.
 

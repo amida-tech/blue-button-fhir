@@ -27,6 +27,7 @@
         "blue-button-meta": "~1.5.0",
         "blue-button-util": "~1.5.0",
         "bunyan": "~1.2.3",
+        "jsonave": "0.0.2",
         "lodash": "^3.9.3"
     },
     "devDependencies": {

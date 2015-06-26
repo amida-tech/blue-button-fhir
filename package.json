@@ -1,57 +1,62 @@
 {
-    "name": "blue-button-fhir",
-    "version": "1.5.0",
-    "description": "Blue Button FHIR to Model Translator",
-    "main": "./index.js",
-    "directories": {
-        "lib": "lib"
+  "name": "blue-button-fhir",
+  "version": "1.6.0-beta.1",
+  "description": "Blue Button FHIR to Model Translator",
+  "main": "./index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "grunt mocha",
+    "verify": "grunt"
+  },
+  "author": "Dmitry Kachaev <dmitry@amida-tech.com>",
+  "contributors": [
+    {
+      "name": "Matthew McCall",
+      "email": "matt@amida-tech.com"
     },
-    "scripts": {
-        "test": "grunt mocha",
-        "verify": "grunt"
-    },
-    "author": "Dmitry Kachaev <dmitry@amida-tech.com>",
-    "contributors": [{
-        "name": "Matthew McCall",
-        "email": "matt@amida-tech.com"
-    }, {
-        "name": "Afsin Ustundag",
-        "email": "afsin.ustundag@us.pwc.com"
-    }],
-    "license": "Apache-2.0",
-    "engines": {
-        "node": ">= 0.10.0"
-    },
-    "dependencies": {
-        "blue-button-json2json": "~1.5.0",
-        "blue-button-meta": "~1.5.0",
-        "blue-button-util": "~1.5.0",
-        "bunyan": "~1.2.3",
-        "lodash": "^3.9.3"
-    },
-    "devDependencies": {
-        "blue-button-model": "~1.5.0-beta",
-        "chai": "~1.10.0",
-        "grunt": "~0.4.5",
-        "grunt-contrib-jshint": "~0.10.0",
-        "grunt-contrib-watch": "~0.6.1",
-        "grunt-jsbeautifier": "~0.2.7",
-        "grunt-mocha-test": "~0.12.4",
-        "grunt-shell": "~1.1.1",
-        "mocha": "~2.1.0"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/amida-tech/blue-button-fhir.git"
-    },
-    "keywords": [
-        "bluebutton",
-        "blue-button",
-        "fhir",
-        "model"
-    ],
-    "bugs": {
-        "url": "https://github.com/amida-tech/blue-button-fhir/issues"
-    },
-    "homepage": "https://github.com/amida-tech/blue-button-fhir"
+    {
+      "name": "Afsin Ustundag",
+      "email": "afsin.ustundag@us.pwc.com"
+    }
+  ],
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "dependencies": {
+    "blue-button-json2json": "^1.6.0-beta",
+    "blue-button-meta": "~1.5.0",
+    "blue-button-util": "^1.6.0-beta",
+    "bunyan": "~1.2.3",
+    "jsonave": "0.0.2",
+    "lodash": "^3.9.3"
+  },
+  "devDependencies": {
+    "blue-button-model": "~1.5.0",
+    "chai": "^3.0.0",
+    "coveralls": "^2.11.2",
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.11.2",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-jsbeautifier": "^0.2.10",
+    "grunt-mocha-test": "^0.12.7",
+    "grunt-shell": "^1.1.2",
+    "mocha": "^2.2.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amida-tech/blue-button-fhir.git"
+  },
+  "keywords": [
+    "bluebutton",
+    "blue-button",
+    "fhir",
+    "model"
+  ],
+  "bugs": {
+    "url": "https://github.com/amida-tech/blue-button-fhir/issues"
+  },
+  "homepage": "https://github.com/amida-tech/blue-button-fhir"
 }

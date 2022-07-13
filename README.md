@@ -5,9 +5,6 @@ FHIR to Blue Button Model Translator
 
 [![NPM](https://nodei.co/npm/blue-button-fhir.png)](https://nodei.co/npm/blue-button-fhir/)
 
-[![Build Status](https://travis-ci.org/amida-tech/blue-button-fhir.svg)](https://travis-ci.org/amida-tech/blue-button-fhir)
-[![Coverage Status](https://coveralls.io/repos/amida-tech/blue-button-fhir/badge.png)](https://coveralls.io/r/amida-tech/blue-button-fhir)
-
 This library translates [FHIR Resource Bundles](http://www.hl7.org/implement/standards/fhir/extras.html) to [blue button model](https://github.com/amida-tech/blue-button).
 
 Currently the following resources are supported in Bundles
@@ -28,7 +25,7 @@ Currently the following resources are supported in Bundles
 
 Require blue-button-fhir module
 ``` javascript
-var bbfhir = require("blue-button-fhir");
+var bbfhir = require("@amida-tech/blue-button-fhir");
 ```
 and translate a FHIR Resource Bundle 
 ``` javascript
@@ -49,7 +46,7 @@ The only configurable item in this project is logging which can be configured in
 
 ## Testing
 
-[Mocha](http://mochajs.org/) and [Grunt](http://gruntjs.com/) are used for testing this project.  Simply run `grunt` in the project directory to run all the tests.
+[Jest](https://jestjs.io/) and [Grunt](http://gruntjs.com/) are used for testing this project.  Simply run `grunt test` in the project directory to run all the tests.
 
 ## License
 

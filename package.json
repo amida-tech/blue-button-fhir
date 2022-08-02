@@ -1,6 +1,6 @@
 {
   "name": "@amida-tech/blue-button-fhir",
-  "version": "1.6.1",
+  "version": "1.6.2",
   "description": "Blue Button FHIR to Model Translator",
   "main": "./index.js",
   "directories": {
@@ -27,9 +27,9 @@
   },
   "dependencies": {
     "@amida-tech/blue-button-meta": "^1.7.3",
-    "@amida-tech/blue-button-util": "^1.6.2",
-    "@amida-tech/jsonapter": "^2.0.9",
-    "@amida-tech/jsonave": "^1.0.2",
+    "@amida-tech/blue-button-util": "^1.6.3",
+    "@amida-tech/jsonapter": "^2.0.10",
+    "@amida-tech/jsonave": "^1.0.3",
     "bunyan": "^1.8.15",
     "lodash": "^4.17.21"
   },

@@ -26,7 +26,7 @@
     "node": ">= 14.19.3"
   },
   "dependencies": {
-    "@amida-tech/blue-button-meta": "^1.7.3",
+    "@amida-tech/blue-button-meta": "^1.7.4",
     "@amida-tech/blue-button-util": "^1.6.3",
     "@amida-tech/jsonapter": "^2.0.10",
     "@amida-tech/jsonave": "^1.0.3",

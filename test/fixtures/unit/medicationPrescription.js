@@ -170,6 +170,10 @@ cases[1].input = cases[1].resources[0];
 
 cases[1].result = {
   "date_time": {
+    "low": {
+      "date": "2014-10-03T03:59:00.000Z",
+      "precision": "second"
+    },
     "point": {
       "date": "2014-10-03T03:59:00.000Z",
       "precision": "second"
@@ -251,7 +255,12 @@ cases[2].result = {
   },
   "administration": {
     "interval": {
-      "event": "at bedtime"
+      "event": "at bedtime",
+      "period": {
+        "unit": "s",
+        "value": 1
+      },
+      "frequency": true
     }
   }
 };

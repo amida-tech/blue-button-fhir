@@ -1,7 +1,7 @@
 {
   "name": "@amida-tech/blue-button-fhir",
   "version": "1.6.2",
-  "description": "Blue Button FHIR to Model Translator",
+  "description": "FHIR to Blue Button Model Translator",
   "main": "./index.js",
   "directories": {
     "lib": "lib"
@@ -23,25 +23,25 @@
   ],
   "license": "Apache-2.0",
   "engines": {
-    "node": ">= 14.19.3"
+    "node": ">= 16"
   },
   "dependencies": {
-    "@amida-tech/blue-button-meta": "^1.7.3",
-    "@amida-tech/blue-button-util": "^1.6.3",
+    "@amida-tech/blue-button-meta": "^1.7.4",
+    "@amida-tech/blue-button-util": "^1.6.4",
     "@amida-tech/jsonapter": "^2.0.10",
     "@amida-tech/jsonave": "^1.0.3",
     "bunyan": "^1.8.15",
     "lodash": "^4.17.21"
   },
   "devDependencies": {
-    "@amida-tech/blue-button-model": "^1.10.3",
+    "@amida-tech/blue-button-model": "^1.10.4",
     "coveralls": "^3.1.1",
-    "grunt": "^1.5.3",
+    "grunt": "^1.6.1",
     "grunt-contrib-jshint": "^3.2.0",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-jsbeautifier": "^0.2.13",
     "grunt-run": "^0.8.1",
-    "jest": "^27.5.1"
+    "jest": "^29.6.1"
   },
   "repository": {
     "type": "git",

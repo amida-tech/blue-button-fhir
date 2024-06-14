@@ -20,8 +20,12 @@ var testDescription = function (casesKey) {
       var template = templates[casesKey];
       var result = fhir.resourceToModel(resourceDictionary, template, c.input.resource);
 
-      console.log('template.type', _util.inspect(template.type, { depth: 5 }));
-      console.log('result', _util.inspect(result, { depth: 5 }));
+      console.log('template.type', _util.inspect(template.type, {
+        depth: 5
+      }));
+      console.log('result', _util.inspect(result, {
+        depth: 5
+      }));
 
       expect(result).toEqual(c.result);
       var r = validator.validate(result, template.type);
@@ -39,12 +43,12 @@ var testDescription = function (casesKey) {
   };
 };
 
-// describe('allergyIntolerance resource unit', testDescription('allergyIntolerance'));
-// describe('condition resource unit', testDescription('condition'));
-// describe('medicationAdministration resource unit', testDescription('medicationAdministration'));
-// describe('medicationPrescription resource unit', testDescription('medicationPrescription'));
-// describe('medicationStatement resource unit', testDescription('medicationStatement'));
+describe('allergyIntolerance resource unit', testDescription('allergyIntolerance'));
+describe('condition resource unit', testDescription('condition'));
+describe('medicationAdministration resource unit', testDescription('medicationAdministration'));
+describe('medicationPrescription resource unit', testDescription('medicationPrescription'));
+describe('medicationStatement resource unit', testDescription('medicationStatement'));
 describe('observation-result-single resource unit', testDescription('observation-result-single'));
-// describe('observation-result resource unit', testDescription('observation-result'));
-// describe('observation-vital resource unit', testDescription('observation-vital'));
-// describe('patient resource unit', testDescription('patient'));
+describe('observation-result resource unit', testDescription('observation-result'));
+describe('observation-vital resource unit', testDescription('observation-vital'));
+describe('patient resource unit', testDescription('patient'));

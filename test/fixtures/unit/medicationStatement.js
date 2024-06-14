@@ -9,7 +9,8 @@ cases[0].resources = [{
     "status": "in-progress",
     "dosage": [{
       "quantity": {
-        "value": 1
+        "value": 1,
+        "units": "mg/actuat"
       },
       "schedule": {
         "repeat": {
@@ -60,7 +61,8 @@ cases[0].result = {
   },
   "administration": {
     "dose": {
-      "value": 1
+      "value": 1,
+      "unit": "mg/actuat"
     },
     "interval": {
       "period": {
